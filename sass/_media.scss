@@ -1,0 +1,3931 @@
+@import "variables";
+
+/*
+media xl
+ */
+@mixin MediaXL(){
+  @media (min-width: 1200px) {
+    @each $i in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12{
+      .col-xl-#{$i}{
+        width: 8.333333% * $i;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    div.container *{
+      transition: all linear;
+    }
+
+    /*
+   ---------------------------------- xl menu -----------------------
+     */
+    section.header{
+      width: 100%;
+      position: fixed;
+      z-index: 10;
+      background-color: #676380;
+      padding-top: 15px;
+      >div.row{
+        >div.col-xl-8{
+          >div.logo{
+            display: flex;
+            flex-flow: wrap;
+            font-size: 28px;
+            color: $bt-colors;
+            >img{
+              width: 50px;
+              height: 50px;
+            }
+            >span{
+              display:flex;
+              margin: 0 10px;
+              align-items: center;
+            }
+          }
+        }
+        div.menu{
+          display: flex;
+          align-items: center;
+          >nav{
+            >ul{
+              display: flex;
+              flex-flow: row;
+              list-style: none;
+              >li{
+                margin: 0 10px;
+                >a{
+                  font-size: 13px;
+                  color: #ffffff;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  transition: all 300ms linear;
+                  &:hover{
+                    color: $bt-colors;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ----------------------------- end xl menu -------------------------
+     */
+
+
+
+    /*
+    ------------------------------ xl slider -------------------------------
+     */
+    section.slider{
+      height: 600px;
+      background: url("../images/background1.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.swiper{
+        >div.swiper-wrapper{
+          >div.swiper-slide{
+            height: 600px;
+            background-color: rgba(46, 39, 77, 0.7);
+            padding: 70px 0;
+            box-sizing: border-box;
+            >div.content{
+              display: flex;
+              flex-flow: column;
+              color: white;
+              >h1{
+                font-family:  "Copperplate Gothic Bold";
+                font-size: 32pt;
+                color: #ffffff;
+              }
+              >div.vl{
+                content: "";
+                width: 60px;
+                margin: 0 auto;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                background-color: $bt-colors;
+                height: 1px;
+                border: 0;
+              }
+              >p{
+                font-size: 14pt;
+              }
+              >a{
+                display: flex;
+                font-size: 14px;
+                font-family: "Serif";
+                align-self: center;
+                margin: 50px 0;
+                padding: 10px 15px;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $bt-colors;
+                border: 1px solid $bt-colors;
+                transition: all 300ms linear;
+                &:hover{
+                  color: white;
+                  background-color: $bt-colors;
+                  border: 1px solid white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xl slider ---------------------------
+     */
+
+
+    /*
+    ------------------------------ xl about ------------------------------
+     */
+    section.about{
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      margin: 70px 0;
+      >div.our-story{
+        box-sizing: border-box;
+        >div.logo{
+          margin-right: 50px;
+        }
+        >div.content{
+          margin-left: 50px;
+          >h2{
+            font-family: Castellar;
+            font-size: 22pt;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+          }
+          >p{
+            font-size: 14px;
+            color: #817f86;
+          }
+          >a{
+            display: inline-block;
+            font-family: "Serif";
+            font-size: 14px;
+            margin-top: 30px;
+            padding: 10px 15px;
+            color: $bt-colors;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 1px solid $bt-colors;
+            transition: all 300ms linear;
+            cursor: pointer;
+            &:hover{
+              color: white;
+              background-color: $bt-colors;
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xl about ---------------------------
+     */
+
+    /*
+    ------------------------------ xl videos ------------------------------
+     */
+    section.videos{
+      background: url("../images/background-2.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.row{
+        background-color: rgba(58, 50, 92, 0.80);
+        height: 400px;
+        align-items: center;
+        >div.col-xl-8{
+          justify-content: center;
+          >div.content{
+            display: flex;
+            flex-flow: column;
+            text-align: center;
+            >a{
+              font-size: 100px;
+              text-transform: uppercase;
+              margin-bottom: 30px;
+              color: white;
+              transition: all 300ms linear;
+              &:hover{
+               color: $bt-colors;
+              }
+            }
+            >span{
+              text-transform: uppercase;
+              color: white;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xl videos ------------------------------
+    */
+
+
+    /*
+    ------------------------------ xl expertise ---------------------------
+     */
+    section.expertise{
+      display: flex;
+      justify-content: center;
+      margin: 70px 0;
+      >div.col-xl-8{
+        flex-flow: column;
+        >div.header{
+          >h1{
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+          }
+          >h3{
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+          }
+          >div.vl{
+            content: "";
+            width: 60px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #c6c4c9;
+            height: 1px;
+            border: 0;
+          }
+        }
+        >div.exp-items{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          >div.col-xl-2{
+            display: flex;
+            flex-flow: column;
+            flex: 33.33333%;
+            width: 100%;
+            padding: 40px 30px;
+            text-align: center;
+            border: 1px solid #c6c4c9;
+            >i{
+              color: $bt-colors;
+              font-size: 42px;
+            }
+            >h3{
+              font-size: 14px;
+              text-transform: uppercase;
+              margin: 30px 0;
+            }
+            >p{
+              font-size: 14px;
+              color: #817f86;
+            }
+            &:nth-of-type(1),&:nth-of-type(4){
+              border-left: none;
+              border-top: none;
+            }
+            &:nth-of-type(3),&:nth-of-type(6){
+              border-right: none;
+              border-top: none;
+            }
+            &:nth-of-type(4),&:nth-of-type(6){
+              border-bottom: none;
+            }
+            &:nth-of-type(2){
+              border-top: none;
+              border-bottom: none;
+            }
+            &:nth-of-type(5){
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xl expertise-------------------------
+     */
+
+
+    /*
+    ------------------------------ xl team ------------------------------
+    */
+    section.team{
+      background: url("../images/background1.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.row{
+        background-color: rgba(58, 50, 92, 0.80);
+        padding: 70px 0;
+        box-sizing: border-box;
+        >div.col-xl-8{
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          >div.header{
+            text-align: center;
+            margin-bottom: 50px;
+            >h1{
+              color: #ffffff;
+            }
+            >h3{
+              color: #ffffff;
+              font-weight: lighter;
+            }
+            >div.vl{
+              content: "";
+              width: 50px;
+              margin: 0 auto;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              background-color: #655c80;
+              height: 2px;
+              border: 0;
+            }
+          }
+          >div.content{
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            >div.col-xl-3{
+              display: flex;
+              flex-flow: column;
+              width: 215px;
+              margin: 10px;
+              border: 1px solid white;
+              >div.top{
+                >img{
+                  width: 100%;
+                  height: 235px;
+                  background-color: white;
+                }
+              }
+              >div.bottom{
+                width: 100%;
+                text-align: center;
+                color: #ffffff;
+                >h5{
+                  font-size: 14px;
+                  font-weight: bold;
+                  margin-top: 20px;
+                }
+                >h6{
+                  font-size: 12px;
+                  color: #9f9cb1;
+                  font-weight: lighter;
+                  text-transform: uppercase;
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }
+          >div.bottom{
+            text-align: center;
+            margin-top: 70px;
+            >h3{
+              color: white;
+              font-size: 14px;
+              font-weight: 100;
+              margin-bottom: 25px;
+            }
+            >a{
+              font-family: Serif;
+              color: $bt-colors;
+              padding: 15px;
+              font-size: 16px;
+              text-transform: uppercase;
+              text-decoration: none;
+              border: 1px solid $bt-colors;
+              transition: all 300ms linear;
+              &:hover{
+                color: white;
+                border: 1px solid white;
+                background-color: $bt-colors;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xl team --------------------------
+    */
+
+
+    /*
+    ------------------------------ xl projects ------------------------------
+    */
+    section.projects{
+      display: flex;
+      flex-flow: column;
+      margin: 70px 0;
+      >div.header{
+        justify-self: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        >h3{
+          font-family: Castellar;
+        }
+        >h4{
+          font-size: 14px;
+          font-weight: 100;
+          text-transform: capitalize;
+          cursor: pointer;
+          transition: all 300ms linear;
+          &:hover{
+            color: $bt-colors;
+          }
+        }
+      }
+      >div.project-items{
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        >div.col-xl-2{
+          display: flex;
+          flex-flow: column;
+          flex: 16.666667%;
+          width: 100%;
+          text-align: center;
+          >img{
+            width: 100%;
+            height: 200px;
+            background-color: #817f86;
+          }
+        }
+      }
+      >div.button{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        >a{
+          font-family: Serif;
+          color: $bt-colors;
+          padding: 15px 30px;
+          text-transform: uppercase;
+          font-weight: bold;
+          text-decoration: none;
+          border: 1px solid $bt-colors;
+          transition: all 300ms linear;
+          &:hover{
+            color: white;
+            background-color: $bt-colors;
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xl projects ------------------------------
+    */
+
+
+    /*
+    ------------------------------ xl quotes ------------------------------
+    */
+    section.quotes{
+      height: 500px;
+      background: url("../images/background3.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.swiper{
+        >div.swiper-wrapper{
+          >div.swiper-slide{
+            background-color: rgba(46, 39, 77, 0.7);
+            box-sizing: border-box;
+            >div.content{
+              display: flex;
+              flex-flow: column;
+              color: white;
+              >i{
+                font-size: 32px;
+              }
+              >p{
+                font-size: 14px;
+                margin: 50px 0;
+              }
+              >span.name {
+                font-size: 14px;
+              }
+              >span.position{
+                font-size: 12px;
+                font-weight: 100;
+                color: #cfced4;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xl quotes ------------------------------
+    */
+
+
+    /*
+    ------------------------------ xl reviews ------------------------------
+    */
+    section.review{
+      display: flex;
+      justify-content: center;
+      margin: 70px 0;
+      div.col-xl-8{
+         display: flex;
+         justify-content: space-between;
+        div.forms{
+          >h2{
+            text-transform: uppercase;
+            font-family: Castellar;
+          }
+          >form{
+            display: flex;
+            flex-flow: column;
+            >input{
+              width: 460px;
+              padding: 15px 20px;
+              margin: 20px 0;
+              border: 1px solid #817f86;
+              color: #817f86;
+              font-size: 14px;
+              box-sizing: border-box;
+            }
+            >input#submit{
+              width: 140px;
+              padding: 10px 30px;
+              background-color: white;
+              color: $bt-colors;
+              border: 1px solid $bt-colors;
+              font-weight: bold;
+              transition: all 300ms linear;
+              &:hover{
+                color: white;
+                background-color: $bt-colors;
+                cursor: pointer;
+              }
+            }
+            >textarea{
+              width: 460px;
+              padding: 15px 20px;
+              margin: 20px 0;
+              border: 1px solid #817f86;
+              color: #817f86;
+              resize: none;
+              box-sizing: border-box;
+            }
+          }
+        }
+        div.brands{
+          width: 50%;
+          >h2{
+            text-transform: uppercase;
+            font-family: Castellar;
+            text-align: left;
+          }
+          >div.brand-items{
+            display: flex;
+            flex-flow: row;
+            margin-top: 20px;
+            >div.left-brands{
+              display: flex;
+              flex-flow: column;
+              margin-right: 40px;
+              >img{
+                width: 160px ;
+                height: 60px;
+                margin: 20px 0;
+                object-fit: contain;
+              }
+            }
+            >div.right-brands{
+              display: flex;
+              flex-flow: column;
+              margin-left: 40px;
+              >img{
+                width: 160px ;
+                height: 60px;
+                margin: 20px 0;
+                object-fit: contain;
+              }
+            }
+
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xl reviews ------------------------------
+    */
+
+
+    /*
+    ------------------------------ xl footer ------------------------------
+    */
+    section.footer{
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      background: url("../images/background1.jpg") no-repeat;
+      object-fit: cover;
+      >div.row{
+        background-color: rgba(65, 50, 102, 0.8);
+        padding: 70px 0;
+        >footer.col-xl-8{
+          >div.about{
+            display: flex;
+            flex-flow: column;
+            margin-right: 10px;
+            >div.logo{
+              display: flex;
+              flex-flow: wrap;
+              font-size: 28px;
+              font-weight: lighter;
+              margin-bottom: 25px;
+              color: $bt-colors;
+              >img{
+                width: 50px;
+                height: 50px;
+              }
+              >span{
+                display:flex;
+                margin: 0 10px;
+                align-items: center;
+              }
+            }
+            >p{
+              font-size: 14px;
+              margin-bottom: 80px;
+              color: white;
+            }
+            >ul{
+              list-style: none;
+              display: flex;
+              flex-flow: row wrap;
+              >li{
+                text-transform: uppercase;
+                margin: 0 15px;
+                font-size: 14px;
+                color: white;
+                transition: all 300ms linear;
+                cursor: pointer;
+                &:hover{
+                  color: $bt-colors;
+                }
+              }
+            }
+          }
+          >div.location{
+            display: flex;
+            flex-flow: column;
+            align-content: flex-start;
+            margin-left: 10px;
+            height: 170px;
+            >h3{
+              color: white;
+              text-transform: uppercase;
+              font-size: 15px;
+            }
+            >p{
+              color: white;
+              font-size: 14px;
+              >i{
+                margin-right: 15px;
+              }
+            }
+            >span{
+              color: white;
+              >i{
+                margin-right: 15px;
+              }
+            }
+          }
+          >div.social{
+            display: flex;
+            flex-flow: column;
+            margin-left: 10px;
+            >h3{
+              color: white;
+              text-transform: uppercase;
+            }
+            >div.sub{
+              display: flex;
+              align-content: center;
+              >input#subscribe{
+                text-align: center;
+                background-color: transparent;
+                font-size: 15px;
+                padding: 15px;
+                margin-right: 10px;
+                font-family: Serif;
+                box-shadow: none;
+                color: #a099b3;
+                border: 1px solid #a099b3;
+              }
+              >input#sub-submit{
+                height: 50px;
+                width: 70px;
+                background-color: #a199b4;
+                border: none;
+                font-family: Castellar;
+                text-transform: capitalize;
+                transition: all 300ms linear;
+                &:hover{
+                  background-color: white;
+                  color: #655c80;
+                  cursor: pointer;
+                }
+              }
+            }
+            >div.socials{
+              >i{
+                border: 1px solid white;
+                color: white;
+                padding: 10px;
+                border-radius: 50%;
+                transition: all 300ms linear;
+                &:hover{
+                  background-color: white;
+                  color: $bt-colors;
+                  cursor: pointer;
+                }
+              }
+            }
+            >span{
+              width: 100%;
+              text-align: right;
+              color: white;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xl footer ------------------------------
+    */
+
+
+  }
+}
+/*
+end media xl
+ */
+
+
+/*
+media lg
+ */
+@mixin MediaLG(){
+  @media (min-width: 990px) and (max-width: 1200px){
+
+    @each $i in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12{
+      .col-lg-#{$i}{
+        width: 8.333333% * $i;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    div.container *{
+      transition: all 300ms linear;
+    }
+
+    /*
+    ---------------------------------- lg menu -----------------------
+    */
+    section.header{
+      width: 100%;
+      position: fixed;
+      z-index: 10;
+      background-color: #676380;
+      padding-top: 15px;
+      >div.row{
+        >div.col-xl-8{
+          >div.logo{
+            display: flex;
+            flex-flow: wrap;
+            font-size: 28px;
+            color: $bt-colors;
+            >img{
+              width: 50px;
+              height: 50px;
+            }
+            >span{
+              display:flex;
+              margin: 0 10px;
+              align-items: center;
+            }
+          }
+        }
+        div.menu{
+          display: flex;
+          align-items: center;
+          >nav{
+            >ul{
+              display: flex;
+              flex-flow: row;
+              list-style: none;
+              >li{
+                margin: 0 10px;
+                >a{
+                  font-size: 13px;
+                  color: #ffffff;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  transition: all 300ms linear;
+                  &:hover{
+                    color: $bt-colors;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ----------------------------- end lg menu -------------------------
+     */
+
+
+
+    /*
+    ------------------------------ lg slider -------------------------------
+     */
+    section.slider{
+      height: 600px;
+      background: url("../images/background1.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.swiper{
+        >div.swiper-wrapper{
+          >div.swiper-slide{
+            height: 600px;
+            background-color: rgba(46, 39, 77, 0.7);
+            padding: 70px 0;
+            box-sizing: border-box;
+            >div.content{
+              display: flex;
+              flex-flow: column;
+              color: white;
+              >h1{
+                font-family:  "Copperplate Gothic Bold";
+                font-size: 32pt;
+                color: #ffffff;
+              }
+              >div.vl{
+                content: "";
+                width: 60px;
+                margin: 0 auto;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                background-color: $bt-colors;
+                height: 1px;
+                border: 0;
+              }
+              >p{
+                font-size: 14pt;
+              }
+              >a{
+                display: flex;
+                font-size: 14px;
+                font-family: "Serif";
+                align-self: center;
+                margin: 50px 0;
+                padding: 10px 15px;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $bt-colors;
+                border: 1px solid $bt-colors;
+                transition: all 300ms linear;
+                &:hover{
+                  color: white;
+                  background-color: $bt-colors;
+                  border: 1px solid white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end lg slider ---------------------------
+     */
+
+
+    /*
+    ------------------------------ lg about ------------------------------
+     */
+    section.about{
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      margin: 70px 0;
+      >div.our-story{
+        box-sizing: border-box;
+        >div.logo{
+          margin-right: 50px;
+        }
+        >div.content{
+          margin-left: 50px;
+          >h2{
+            font-family: Castellar;
+            font-size: 22pt;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+          }
+          >p{
+            font-size: 14px;
+            color: #817f86;
+          }
+          >a{
+            display: inline-block;
+            font-family: "Serif";
+            font-size: 14px;
+            margin-top: 30px;
+            padding: 10px 15px;
+            color: $bt-colors;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 1px solid $bt-colors;
+            transition: all 300ms linear;
+            cursor: pointer;
+            &:hover{
+              color: white;
+              background-color: $bt-colors;
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end lg about ---------------------------
+     */
+
+    /*
+    ------------------------------ lg videos ------------------------------
+     */
+    section.videos{
+      background: url("../images/background-2.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.row{
+        background-color: rgba(58, 50, 92, 0.80);
+        height: 400px;
+        align-items: center;
+        >div.col-xl-8{
+          justify-content: center;
+          >div.content{
+            display: flex;
+            flex-flow: column;
+            text-align: center;
+            >a{
+              font-size: 100px;
+              text-transform: uppercase;
+              margin-bottom: 30px;
+              color: white;
+              transition: all 300ms linear;
+              &:hover{
+                color: $bt-colors;
+              }
+            }
+            >span{
+              text-transform: uppercase;
+              color: white;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end lg videos ------------------------------
+    */
+
+
+    /*
+    ------------------------------ lg expertise ---------------------------
+     */
+    section.expertise{
+      display: flex;
+      justify-content: center;
+      margin: 70px 0;
+      >div.col-xl-8{
+        flex-flow: column;
+        >div.header{
+          >h1{
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+          }
+          >h3{
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+          }
+          >div.vl{
+            content: "";
+            width: 60px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #c6c4c9;
+            height: 1px;
+            border: 0;
+          }
+        }
+        >div.exp-items{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          >div.col-xl-2{
+            display: flex;
+            flex-flow: column;
+            flex: 33.33333%;
+            width: 100%;
+            padding: 40px 30px;
+            text-align: center;
+            border: 1px solid #c6c4c9;
+            >i{
+              color: $bt-colors;
+              font-size: 42px;
+            }
+            >h3{
+              font-size: 14px;
+              text-transform: uppercase;
+              margin: 30px 0;
+            }
+            >p{
+              font-size: 14px;
+              color: #817f86;
+            }
+            &:nth-of-type(1),&:nth-of-type(4){
+              border-left: none;
+              border-top: none;
+            }
+            &:nth-of-type(3),&:nth-of-type(6){
+              border-right: none;
+              border-top: none;
+            }
+            &:nth-of-type(4),&:nth-of-type(6){
+              border-bottom: none;
+            }
+            &:nth-of-type(2){
+              border-top: none;
+              border-bottom: none;
+            }
+            &:nth-of-type(5){
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end lg expertise-------------------------
+     */
+
+
+    /*
+    ------------------------------ lg team ------------------------------
+    */
+    section.team{
+      background: url("../images/background1.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.row{
+        background-color: rgba(58, 50, 92, 0.80);
+        padding: 70px 0;
+        box-sizing: border-box;
+        >div.col-xl-8{
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          >div.header{
+            text-align: center;
+            margin-bottom: 50px;
+            >h1{
+              color: #ffffff;
+            }
+            >h3{
+              color: #ffffff;
+              font-weight: lighter;
+            }
+            >div.vl{
+              content: "";
+              width: 50px;
+              margin: 0 auto;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              background-color: #655c80;
+              height: 2px;
+              border: 0;
+            }
+          }
+          >div.content{
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            >div.col-xl-3{
+              display: flex;
+              flex-flow: column;
+              width: 215px;
+              margin: 10px;
+              border: 1px solid white;
+              >div.top{
+                >img{
+                  width: 100%;
+                  height: 230px;
+                  background-color: white;
+                }
+              }
+              >div.bottom{
+                width: 100%;
+                text-align: center;
+                color: #ffffff;
+                >h5{
+                  font-size: 14px;
+                  font-weight: bold;
+                  margin-top: 20px;
+                }
+                >h6{
+                  font-size: 12px;
+                  color: #9f9cb1;
+                  font-weight: lighter;
+                  text-transform: uppercase;
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }
+          >div.bottom{
+            text-align: center;
+            margin-top: 70px;
+            >h3{
+              color: white;
+              font-size: 14px;
+              font-weight: 100;
+              margin-bottom: 25px;
+            }
+            >a{
+              font-family: Serif;
+              color: $bt-colors;
+              padding: 15px;
+              font-size: 16px;
+              text-transform: uppercase;
+              text-decoration: none;
+              border: 1px solid $bt-colors;
+              transition: all 300ms linear;
+              &:hover{
+                color: white;
+                border: 1px solid white;
+                background-color: $bt-colors;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end lg team --------------------------
+    */
+
+
+    /*
+    ------------------------------ lg projects ------------------------------
+    */
+    section.projects{
+      display: flex;
+      flex-flow: column;
+      margin: 70px 0;
+      >div.header{
+        justify-self: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        >h3{
+          font-family: Castellar;
+        }
+        >h4{
+          font-size: 14px;
+          font-weight: 100;
+          text-transform: capitalize;
+          cursor: pointer;
+          transition: all 300ms linear;
+          &:hover{
+            color: $bt-colors;
+          }
+        }
+      }
+      >div.project-items{
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        >div.col-xl-2{
+          display: flex;
+          flex-flow: column;
+          flex: 16.666667%;
+          width: 100%;
+          text-align: center;
+          >img{
+            width: 100%;
+            height: 200px;
+            background-color: #817f86;
+          }
+        }
+      }
+      >div.button{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        >a{
+          font-family: Serif;
+          color: $bt-colors;
+          padding: 15px 30px;
+          text-transform: uppercase;
+          font-weight: bold;
+          text-decoration: none;
+          border: 1px solid $bt-colors;
+          transition: all 300ms linear;
+          &:hover{
+            color: white;
+            background-color: $bt-colors;
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end lg projects ------------------------------
+    */
+
+
+    /*
+    ------------------------------ lg quotes ------------------------------
+    */
+    section.quotes{
+      height: 500px;
+      background: url("../images/background3.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.swiper{
+        >div.swiper-wrapper{
+          >div.swiper-slide{
+            background-color: rgba(46, 39, 77, 0.7);
+            box-sizing: border-box;
+            >div.content{
+              display: flex;
+              flex-flow: column;
+              color: white;
+              >i{
+                font-size: 32px;
+              }
+              >p{
+                font-size: 14px;
+                margin: 50px 0;
+              }
+              >span.name {
+                font-size: 14px;
+              }
+              >span.position{
+                font-size: 12px;
+                font-weight: 100;
+                color: #cfced4;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end lg quotes ------------------------------
+    */
+
+
+    /*
+    ------------------------------ lg reviews ------------------------------
+    */
+    section.review{
+      display: flex;
+      justify-content: center;
+      margin: 70px 0;
+      div.col-xl-8{
+        display: flex;
+        justify-content: space-between;
+        div.forms{
+          >h2{
+            text-transform: uppercase;
+            font-family: Castellar;
+          }
+          >form{
+            display: flex;
+            flex-flow: column;
+            >input{
+              width: 460px;
+              padding: 15px 20px;
+              margin: 20px 0;
+              border: 1px solid #817f86;
+              color: #817f86;
+              font-size: 14px;
+              box-sizing: border-box;
+            }
+            >input#submit{
+              width: 140px;
+              padding: 10px 30px;
+              background-color: white;
+              color: $bt-colors;
+              border: 1px solid $bt-colors;
+              font-weight: bold;
+              transition: all 300ms linear;
+              &:hover{
+                color: white;
+                background-color: $bt-colors;
+                cursor: pointer;
+              }
+            }
+            >textarea{
+              width: 460px;
+              padding: 15px 20px;
+              margin: 20px 0;
+              border: 1px solid #817f86;
+              color: #817f86;
+              resize: none;
+              box-sizing: border-box;
+            }
+          }
+        }
+        div.brands{
+          width: 50%;
+          >h2{
+            text-transform: uppercase;
+            font-family: Castellar;
+            text-align: left;
+          }
+          >div.brand-items{
+            display: flex;
+            flex-flow: row;
+            margin-top: 20px;
+            >div.left-brands{
+              display: flex;
+              flex-flow: column;
+              margin-right: 40px;
+              >img{
+                width: 160px ;
+                height: 60px;
+                margin: 20px 0;
+                object-fit: contain;
+              }
+            }
+            >div.right-brands{
+              display: flex;
+              flex-flow: column;
+              margin-left: 40px;
+              >img{
+                width: 160px ;
+                height: 60px;
+                margin: 20px 0;
+                object-fit: contain;
+              }
+            }
+
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end lg reviews ------------------------------
+    */
+
+
+    /*
+    ------------------------------ lg footer ------------------------------
+    */
+    section.footer{
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      background: url("../images/background1.jpg") no-repeat;
+      object-fit: cover;
+      >div.row{
+        background-color: rgba(65, 50, 102, 0.8);
+        padding: 70px 0;
+        >footer.col-xl-8{
+          >div.about{
+            display: flex;
+            flex-flow: column;
+            margin-right: 10px;
+            >div.logo{
+              display: flex;
+              flex-flow: wrap;
+              font-size: 28px;
+              font-weight: lighter;
+              margin-bottom: 25px;
+              color: $bt-colors;
+              >img{
+                width: 50px;
+                height: 50px;
+              }
+              >span{
+                display:flex;
+                margin: 0 10px;
+                align-items: center;
+              }
+            }
+            >p{
+              font-size: 14px;
+              margin-bottom: 80px;
+              color: white;
+            }
+            >ul{
+              list-style: none;
+              display: flex;
+              flex-flow: row wrap;
+              >li{
+                text-transform: uppercase;
+                margin: 0 15px;
+                font-size: 14px;
+                color: white;
+                transition: all 300ms linear;
+                cursor: pointer;
+                &:hover{
+                  color: $bt-colors;
+                }
+              }
+            }
+          }
+          >div.location{
+            display: flex;
+            flex-flow: column;
+            align-content: flex-start;
+            margin-left: 10px;
+            height: 170px;
+            >h3{
+              color: white;
+              text-transform: uppercase;
+              font-size: 15px;
+            }
+            >p{
+              color: white;
+              font-size: 14px;
+              >i{
+                margin-right: 15px;
+              }
+            }
+            >span{
+              color: white;
+              >i{
+                margin-right: 15px;
+              }
+            }
+          }
+          >div.social{
+            display: flex;
+            flex-flow: column;
+            margin-left: 10px;
+            >h3{
+              color: white;
+              text-transform: uppercase;
+            }
+            >div.sub{
+              display: flex;
+              align-content: center;
+              >input#subscribe{
+                text-align: center;
+                background-color: transparent;
+                font-size: 15px;
+                padding: 15px;
+                margin-right: 10px;
+                font-family: Serif;
+                box-shadow: none;
+                color: #a099b3;
+                border: 1px solid #a099b3;
+              }
+              >input#sub-submit{
+                height: 50px;
+                width: 70px;
+                background-color: #a199b4;
+                border: none;
+                font-family: Castellar;
+                text-transform: capitalize;
+                transition: all 300ms linear;
+                &:hover{
+                  background-color: white;
+                  color: #655c80;
+                  cursor: pointer;
+                }
+              }
+            }
+            >div.socials{
+              >i{
+                border: 1px solid white;
+                color: white;
+                padding: 10px;
+                border-radius: 50%;
+                transition: all 300ms linear;
+                &:hover{
+                  background-color: white;
+                  color: $bt-colors;
+                  cursor: pointer;
+                }
+              }
+            }
+            >span{
+              width: 100%;
+              text-align: right;
+              color: white;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end lg footer ------------------------------
+    */
+  }
+}
+/*
+end media lg
+ */
+
+
+/*
+media md
+ */
+@mixin MediaMD(){
+  @media (min-width: 768px) and (max-width: 990px){
+
+    @each $i in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12{
+      .col-md-#{$i}{
+        width: 8.333333% * $i;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    div.container *{
+      transition: all 300ms linear;
+    }
+    /*
+    ---------------------------------- md menu ---------------------------
+    */
+    section.header{
+      width: 100%;
+      position: fixed;
+      z-index: 10;
+      background-color: #676380;
+      padding-top: 15px;
+      >div.row{
+        >div.col-xl-8{
+          >div.logo{
+            display: flex;
+            flex-flow: wrap;
+            font-size: 28px;
+            margin-left: 10px;
+            color: $bt-colors;
+            >img{
+              width: 50px;
+              height: 50px;
+            }
+            >span{
+              display:flex;
+              margin: 0 10px;
+              align-items: center;
+            }
+          }
+        }
+        div.menu{
+          display: flex;
+          align-items: center;
+          >nav{
+            >ul{
+              display: flex;
+              flex-flow: row;
+              list-style: none;
+              margin-right: 10px;
+              >li{
+                margin: 0 10px;
+                >a{
+                  font-size: 13px;
+                  color: #ffffff;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  transition: all 300ms linear;
+                  &:hover{
+                    color: $bt-colors;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ----------------------------- end md menu ----------------------------
+     */
+
+
+
+    /*
+    ------------------------------ md slider -------------------------------
+     */
+    section.slider{
+      height: 600px;
+      background: url("../images/background1.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.swiper{
+        >div.swiper-wrapper{
+          >div.swiper-slide{
+            height: 600px;
+            background-color: rgba(46, 39, 77, 0.7);
+            padding: 70px 0;
+            box-sizing: border-box;
+            >div.content{
+              display: flex;
+              flex-flow: column;
+              color: white;
+              >h1{
+                font-family:  "Copperplate Gothic Bold";
+                font-size: 32pt;
+                color: #ffffff;
+              }
+              >div.vl{
+                content: "";
+                width: 60px;
+                margin: 0 auto;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                background-color: $bt-colors;
+                height: 1px;
+                border: 0;
+              }
+              >p{
+                font-size: 12pt;
+              }
+              >a{
+                display: flex;
+                font-size: 12px;
+                font-family: "Serif";
+                align-self: center;
+                margin: 50px 0;
+                padding: 10px 15px;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $bt-colors;
+                border: 1px solid $bt-colors;
+                transition: all 300ms linear;
+                &:hover{
+                  color: white;
+                  background-color: $bt-colors;
+                  border: 1px solid white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end md slider ---------------------------
+     */
+
+
+    /*
+    ------------------------------ md about ------------------------------
+     */
+    section.about{
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      margin: 70px 0;
+      >div.our-story{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        >div.logo{
+          display: flex;
+          justify-content: center;
+        }
+        >div.content{
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          >h2{
+            font-family: Castellar;
+            font-size: 22pt;
+            text-transform: uppercase;
+            margin: 30px 0;
+          }
+          >p{
+            text-align: center;
+            font-size: 14px;
+            color: #817f86;
+          }
+          >a{
+            display: inline-block;
+            font-family: "Serif";
+            font-size: 14px;
+            margin-top: 30px;
+            padding: 10px 15px;
+            color: $bt-colors;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 1px solid $bt-colors;
+            transition: all 300ms linear;
+            cursor: pointer;
+            &:hover{
+              color: white;
+              background-color: $bt-colors;
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end md about ---------------------------
+     */
+
+    /*
+    ------------------------------ md videos ------------------------------
+     */
+    section.videos{
+      background: url("../images/background-2.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.row{
+        background-color: rgba(58, 50, 92, 0.80);
+        height: 400px;
+        align-items: center;
+        >div.col-xl-8{
+          justify-content: center;
+          >div.content{
+            display: flex;
+            flex-flow: column;
+            text-align: center;
+            >a{
+              font-size: 100px;
+              text-transform: uppercase;
+              margin-bottom: 30px;
+              color: white;
+              transition: all 300ms linear;
+              &:hover{
+                color: $bt-colors;
+              }
+            }
+            >span{
+              text-transform: uppercase;
+              color: white;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------  end md videos ------------------------------
+    */
+
+
+    /*
+    ------------------------------ md expertise ---------------------------
+     */
+    section.expertise{
+      display: flex;
+      justify-content: center;
+      margin: 70px 0;
+      >div.col-xl-8{
+        flex-flow: column;
+        >div.header{
+          >h1{
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+          }
+          >h3{
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+          }
+          >div.vl{
+            content: "";
+            width: 60px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #c6c4c9;
+            height: 1px;
+            border: 0;
+          }
+        }
+        >div.exp-items{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: center;
+          >div.col-xl-2{
+            display: flex;
+            flex-flow: column;
+            width: 300px;
+            padding: 40px 30px;
+            text-align: center;
+            border: 1px solid #c6c4c9;
+            >i{
+              color: $bt-colors;
+              font-size: 42px;
+            }
+            >h3{
+              font-size: 14px;
+              text-transform: uppercase;
+              margin: 30px 0;
+            }
+            >p{
+              font-size: 14px;
+              color: #817f86;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end md expertise-------------------------
+     */
+
+
+    /*
+    ------------------------------ md team ------------------------------
+    */
+    section.team{
+      background: url("../images/background1.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.row{
+        background-color: rgba(58, 50, 92, 0.80);
+        padding: 70px 0;
+        box-sizing: border-box;
+        >div.col-xl-8{
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          >div.header{
+            text-align: center;
+            margin-bottom: 50px;
+            >h1{
+              color: #ffffff;
+            }
+            >h3{
+              color: #ffffff;
+              font-weight: lighter;
+            }
+            >div.vl{
+              content: "";
+              width: 50px;
+              margin: 0 auto;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              background-color: #655c80;
+              height: 2px;
+              border: 0;
+            }
+          }
+          >div.content{
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            >div.col-xl-3{
+              display: flex;
+              flex-flow: column;
+              width: 215px;
+              margin: 10px;
+              border: 1px solid white;
+              >div.top{
+                >img{
+                  width: 100%;
+                  height: 230px;
+                  background-color: white;
+                }
+              }
+              >div.bottom{
+                width: 100%;
+                text-align: center;
+                color: #ffffff;
+                >h5{
+                  font-size: 14px;
+                  font-weight: bold;
+                  margin-top: 20px;
+                }
+                >h6{
+                  font-size: 12px;
+                  color: #9f9cb1;
+                  font-weight: lighter;
+                  text-transform: uppercase;
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }
+          >div.bottom{
+            text-align: center;
+            margin-top: 70px;
+            >h3{
+              color: white;
+              font-size: 14px;
+              font-weight: 100;
+              margin-bottom: 25px;
+            }
+            >a{
+              font-family: Serif;
+              color: $bt-colors;
+              padding: 15px;
+              font-size: 16px;
+              text-transform: uppercase;
+              text-decoration: none;
+              border: 1px solid $bt-colors;
+              transition: all 300ms linear;
+              &:hover{
+                color: white;
+                border: 1px solid white;
+                background-color: $bt-colors;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end md team --------------------------
+    */
+
+
+    /*
+    ------------------------------ md projects ------------------------------
+    */
+    section.projects{
+      display: flex;
+      flex-flow: column;
+      margin: 70px 0;
+      >div.header{
+        justify-self: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        >h3{
+          font-family: Castellar;
+        }
+        >h4{
+          font-size: 14px;
+          font-weight: 100;
+          text-transform: capitalize;
+          cursor: pointer;
+          transition: all 300ms linear;
+          &:hover{
+            color: $bt-colors;
+          }
+        }
+      }
+      >div.project-items{
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        >div.col-xl-2{
+          display: flex;
+          flex-flow: column;
+          flex: 33.333333%;
+          width: 100%;
+          text-align: center;
+          >img{
+            width: 100%;
+            height: 200px;
+            background-color: #817f86;
+          }
+        }
+      }
+      >div.button{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        >a{
+          font-family: Serif;
+          color: $bt-colors;
+          padding: 15px 30px;
+          text-transform: uppercase;
+          font-weight: bold;
+          text-decoration: none;
+          border: 1px solid $bt-colors;
+          transition: all 300ms linear;
+          &:hover{
+            color: white;
+            background-color: $bt-colors;
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end md projects ------------------------------
+    */
+
+
+    /*
+    ------------------------------ md quotes ------------------------------
+    */
+    section.quotes{
+      height: 500px;
+      background: url("../images/background3.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.swiper{
+        >div.swiper-wrapper{
+          >div.swiper-slide{
+            background-color: rgba(46, 39, 77, 0.7);
+            box-sizing: border-box;
+            >div.content{
+              display: flex;
+              flex-flow: column;
+              color: white;
+              >i{
+                font-size: 32px;
+              }
+              >p{
+                font-size: 14px;
+                margin: 50px 0;
+              }
+              >span.name {
+                font-size: 14px;
+              }
+              >span.position{
+                font-size: 12px;
+                font-weight: 100;
+                color: #cfced4;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end md quotes ------------------------------
+    */
+
+
+    /*
+    ------------------------------ md reviews ------------------------------
+    */
+    section.review{
+      display: flex;
+      justify-content: center;
+      margin: 70px 0;
+      >div.col-xl-8{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        div.forms{
+          >h2{
+            text-transform: uppercase;
+            text-align: center;
+            font-family: Castellar;
+          }
+          >form{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            >input{
+              width: 460px;
+              padding: 15px 20px;
+              margin: 20px 0;
+              border: 1px solid #817f86;
+              color: #817f86;
+              font-size: 14px;
+              box-sizing: border-box;
+            }
+            >input#submit{
+              width: 140px;
+              padding: 10px 30px;
+              background-color: white;
+              color: $bt-colors;
+              border: 1px solid $bt-colors;
+              font-weight: bold;
+              transition: all 300ms linear;
+              &:hover{
+                color: white;
+                background-color: $bt-colors;
+                cursor: pointer;
+              }
+            }
+            >textarea{
+              width: 460px;
+              padding: 15px 20px;
+              margin: 20px 0;
+              border: 1px solid #817f86;
+              color: #817f86;
+              resize: none;
+              box-sizing: border-box;
+            }
+          }
+        }
+        >div.brands{
+          >h2{
+            text-transform: uppercase;
+            font-family: Castellar;
+            text-align: center;
+          }
+          >div.brand-items{
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            margin-top: 20px;
+            >div.left-brands{
+              display: flex;
+              flex-flow: column;
+              margin-right: 40px;
+              >img{
+                width: 160px ;
+                height: 60px;
+                margin: 20px 0;
+                object-fit: contain;
+              }
+            }
+            >div.right-brands{
+              display: flex;
+              flex-flow: column;
+              margin-left: 40px;
+              >img{
+                width: 160px ;
+                height: 60px;
+                margin: 20px 0;
+                object-fit: contain;
+              }
+            }
+
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end md reviews ------------------------------
+    */
+
+
+    /*
+    ------------------------------ md footer ------------------------------
+    */
+    section.footer{
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      background: url("../images/background1.jpg") no-repeat;
+      object-fit: cover;
+      >div.row{
+        background-color: rgba(65, 50, 102, 0.8);
+        padding: 70px 0;
+        >footer.col-xl-8{
+          display: flex;
+          flex-flow: column;
+          >div.about{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin-bottom: 40px;
+            >div.logo{
+              display: flex;
+              flex-flow: wrap;
+              font-size: 28px;
+              font-weight: lighter;
+              margin-bottom: 25px;
+              color: $bt-colors;
+              >img{
+                width: 50px;
+                height: 50px;
+              }
+              >span{
+                display:flex;
+                margin: 0 10px;
+                align-items: center;
+              }
+            }
+            >p{
+              font-size: 14px;
+              margin-bottom: 40px;
+              color: white;
+              text-align: center;
+            }
+            >ul{
+              list-style: none;
+              display: flex;
+              flex-flow: row wrap;
+              >li{
+                text-transform: uppercase;
+                margin: 0 15px;
+                font-size: 14px;
+                color: white;
+                transition: all 300ms linear;
+                cursor: pointer;
+                &:hover{
+                  color: $bt-colors;
+                }
+              }
+            }
+          }
+          >div.location{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin: 40px 0;
+            >h3{
+              color: white;
+              text-transform: uppercase;
+              font-size: 15px;
+            }
+            >p{
+              color: white;
+              font-size: 14px;
+              >i{
+                margin-right: 15px;
+              }
+            }
+            >span{
+              color: white;
+              >i{
+                margin-right: 15px;
+              }
+            }
+          }
+          >div.social{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            >h3{
+              color: white;
+              text-transform: uppercase;
+            }
+            >div.sub{
+              display: flex;
+              align-content: center;
+              margin-bottom: 40px;
+              >input#subscribe{
+                text-align: center;
+                background-color: transparent;
+                font-size: 15px;
+                padding: 15px;
+                margin-right: 10px;
+                font-family: Serif;
+                box-shadow: none;
+                color: #a099b3;
+                border: 1px solid #a099b3;
+              }
+              >input#sub-submit{
+                height: 50px;
+                width: 70px;
+                background-color: #a199b4;
+                border: none;
+                font-family: Castellar;
+                text-transform: capitalize;
+                transition: all 300ms linear;
+                &:hover{
+                  background-color: white;
+                  color: #655c80;
+                  cursor: pointer;
+                }
+              }
+            }
+            >div.socials{
+              >i{
+                border: 1px solid white;
+                color: white;
+                padding: 10px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+                transition: all 300ms linear;
+                &:hover{
+                  background-color: white;
+                  color: $bt-colors;
+                  cursor: pointer;
+                }
+              }
+            }
+            >span{
+              width: 100%;
+              text-align: center;
+              color: white;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end md footer ------------------------------
+    */
+
+  }
+}
+/*
+end media md
+ */
+
+
+/*
+media sm
+ */
+@mixin MediaSM(){
+  @media (min-width: 540px) and (max-width: 768px){
+
+    @each $i in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12{
+      .col-sm-#{$i}{
+        width: 8.333333% * $i;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    div.container *{
+      transition: all 300ms linear;
+    }
+
+    /*
+    ---------------------------------- sm menu ---------------------------
+    */
+    section.header{
+      width: 100%;
+      z-index: 10;
+      position: fixed;
+      background-color: #676380;
+      padding-top: 15px;
+      >div.row{
+        >div.col-xl-8{
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          >div.logo{
+            display: flex;
+            flex-flow: wrap;
+            font-size: 28px;
+            color: $bt-colors;
+            >img{
+              width: 50px;
+              height: 50px;
+            }
+            >span{
+              display:flex;
+              margin: 0 10px;
+              align-items: center;
+            }
+          }
+        }
+        div.menu{
+          display: flex;
+          align-items: center;
+          >nav{
+            >ul{
+              display: flex;
+              flex-flow: row;
+              list-style: none;
+              >li{
+                margin: 0 10px;
+                >a{
+                  font-size: 13px;
+                  color: #ffffff;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  transition: all 300ms linear;
+                  &:hover{
+                    color: $bt-colors;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ----------------------------- end sm menu ----------------------------
+     */
+
+
+
+    /*
+    ------------------------------ sm slider -------------------------------
+     */
+    section.slider{
+      height: 600px;
+      background: url("../images/background1.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.swiper{
+        >div.swiper-wrapper{
+          >div.swiper-slide{
+            height: 600px;
+            background-color: rgba(46, 39, 77, 0.7);
+            padding: 70px 0;
+            box-sizing: border-box;
+            >div.content{
+              display: flex;
+              flex-flow: column;
+              color: white;
+              >h1{
+                font-family:  "Copperplate Gothic Bold";
+                font-size: 26pt;
+                color: #ffffff;
+              }
+              >div.vl{
+                content: "";
+                width: 60px;
+                margin: 0 auto;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                background-color: $bt-colors;
+                height: 1px;
+                border: 0;
+              }
+              >p{
+                font-size: 12pt;
+              }
+              >a{
+                display: flex;
+                font-size: 12px;
+                font-family: "Serif";
+                align-self: center;
+                margin: 50px 0;
+                padding: 10px 15px;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $bt-colors;
+                border: 1px solid $bt-colors;
+                transition: all 300ms linear;
+                &:hover{
+                  color: white;
+                  background-color: $bt-colors;
+                  border: 1px solid white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end sm slider ---------------------------
+     */
+
+
+    /*
+    ------------------------------ sm about ------------------------------
+     */
+    section.about{
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      margin: 70px 0;
+      >div.our-story{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        >div.logo{
+          display: flex;
+          justify-content: center;
+        }
+        >div.content{
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          >h2{
+            font-family: Castellar;
+            font-size: 22pt;
+            text-transform: uppercase;
+            margin: 30px 0;
+          }
+          >p{
+            text-align: center;
+            font-size: 14px;
+            color: #817f86;
+          }
+          >a{
+            display: inline-block;
+            font-family: "Serif";
+            font-size: 14px;
+            margin-top: 30px;
+            padding: 10px 15px;
+            color: $bt-colors;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 1px solid $bt-colors;
+            transition: all 300ms linear;
+            cursor: pointer;
+            &:hover{
+              color: white;
+              background-color: $bt-colors;
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end sm about ---------------------------
+     */
+
+    /*
+    ------------------------------ sm videos ------------------------------
+     */
+    section.videos{
+      background: url("../images/background-2.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.row{
+        background-color: rgba(58, 50, 92, 0.80);
+        height: 400px;
+        align-items: center;
+        >div.col-xl-8{
+          justify-content: center;
+          >div.content{
+            display: flex;
+            flex-flow: column;
+            text-align: center;
+            >a{
+              font-size: 100px;
+              text-transform: uppercase;
+              margin-bottom: 30px;
+              color: white;
+              transition: all 300ms linear;
+              &:hover{
+                color: $bt-colors;
+              }
+            }
+            >span{
+              text-transform: uppercase;
+              color: white;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------  end sm videos ------------------------------
+    */
+
+
+    /*
+    ------------------------------ sm expertise ---------------------------
+     */
+    section.expertise{
+      display: flex;
+      justify-content: center;
+      margin: 70px 0;
+      >div.col-xl-8{
+        flex-flow: column;
+        >div.header{
+          >h1{
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+          }
+          >h3{
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+          }
+          >div.vl{
+            content: "";
+            width: 60px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #c6c4c9;
+            height: 1px;
+            border: 0;
+          }
+        }
+        >div.exp-items{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: center;
+          >div.col-xl-2{
+            display: flex;
+            flex-flow: column;
+            width: 300px;
+            padding: 40px 30px;
+            text-align: center;
+            border: 1px solid #c6c4c9;
+            >i{
+              color: $bt-colors;
+              font-size: 42px;
+            }
+            >h3{
+              font-size: 14px;
+              text-transform: uppercase;
+              margin: 30px 0;
+            }
+            >p{
+              font-size: 14px;
+              color: #817f86;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end sm expertise-------------------------
+     */
+
+
+    /*
+    ------------------------------ sm team ------------------------------
+    */
+    section.team{
+      background: url("../images/background1.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.row{
+        background-color: rgba(58, 50, 92, 0.80);
+        padding: 70px 0;
+        box-sizing: border-box;
+        >div.col-xl-8{
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          >div.header{
+            text-align: center;
+            margin-bottom: 50px;
+            >h1{
+              color: #ffffff;
+            }
+            >h3{
+              color: #ffffff;
+              font-weight: lighter;
+            }
+            >div.vl{
+              content: "";
+              width: 50px;
+              margin: 0 auto;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              background-color: #655c80;
+              height: 2px;
+              border: 0;
+            }
+          }
+          >div.content{
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            >div.col-xl-3{
+              display: flex;
+              flex-flow: column;
+              width: 215px;
+              margin: 10px;
+              border: 1px solid white;
+              >div.top{
+                >img{
+                  width: 100%;
+                  height: 230px;
+                  background-color: white;
+                }
+              }
+              >div.bottom{
+                width: 100%;
+                text-align: center;
+                color: #ffffff;
+                >h5{
+                  font-size: 14px;
+                  font-weight: bold;
+                  margin-top: 20px;
+                }
+                >h6{
+                  font-size: 12px;
+                  color: #9f9cb1;
+                  font-weight: lighter;
+                  text-transform: uppercase;
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }
+          >div.bottom{
+            text-align: center;
+            margin-top: 70px;
+            >h3{
+              color: white;
+              font-size: 14px;
+              font-weight: 100;
+              margin-bottom: 25px;
+            }
+            >a{
+              font-family: Serif;
+              color: $bt-colors;
+              padding: 15px;
+              font-size: 16px;
+              text-transform: uppercase;
+              text-decoration: none;
+              border: 1px solid $bt-colors;
+              transition: all 300ms linear;
+              &:hover{
+                color: white;
+                border: 1px solid white;
+                background-color: $bt-colors;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end sm team --------------------------
+    */
+
+
+    /*
+    ------------------------------ sm projects ------------------------------
+    */
+    section.projects{
+      display: flex;
+      flex-flow: column;
+      margin: 70px 0;
+      >div.header{
+        flex-flow: column;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        >h3{
+          font-family: Castellar;
+        }
+        >h4{
+          font-size: 14px;
+          font-weight: 100;
+          text-transform: capitalize;
+          cursor: pointer;
+          transition: all 300ms linear;
+          &:hover{
+            color: $bt-colors;
+          }
+        }
+      }
+      >div.project-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-flow: wrap;
+        >div.col-xl-2{
+          display: flex;
+          flex-flow: column;
+          width: 300px;
+          text-align: center;
+          >img{
+            width: 100%;
+            height: 200px;
+            background-color: #817f86;
+          }
+        }
+      }
+      >div.button{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        >a{
+          font-family: Serif;
+          color: $bt-colors;
+          padding: 15px 30px;
+          text-transform: uppercase;
+          font-weight: bold;
+          text-decoration: none;
+          border: 1px solid $bt-colors;
+          transition: all 300ms linear;
+          &:hover{
+            color: white;
+            background-color: $bt-colors;
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end sm projects ------------------------------
+    */
+
+
+    /*
+    ------------------------------ sm quotes ------------------------------
+    */
+    section.quotes{
+      height: 500px;
+      background: url("../images/background3.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.swiper{
+        >div.swiper-wrapper{
+          >div.swiper-slide{
+            background-color: rgba(46, 39, 77, 0.7);
+            box-sizing: border-box;
+            >div.content{
+              display: flex;
+              flex-flow: column;
+              color: white;
+              >i{
+                font-size: 32px;
+              }
+              >p{
+                font-size: 14px;
+                margin: 50px 0;
+              }
+              >span.name {
+                font-size: 14px;
+              }
+              >span.position{
+                font-size: 12px;
+                font-weight: 100;
+                color: #cfced4;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end sm quotes ------------------------------
+    */
+
+
+    /*
+    ------------------------------ sm reviews ------------------------------
+    */
+    section.review{
+      display: flex;
+      justify-content: center;
+      margin: 70px 0;
+      >div.col-xl-8{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        div.forms{
+          >h2{
+            text-transform: uppercase;
+            text-align: center;
+            font-family: Castellar;
+          }
+          >form{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            >input{
+              width: 460px;
+              padding: 15px 20px;
+              margin: 20px 0;
+              border: 1px solid #817f86;
+              color: #817f86;
+              font-size: 14px;
+              box-sizing: border-box;
+            }
+            >input#submit{
+              width: 140px;
+              padding: 10px 30px;
+              background-color: white;
+              color: $bt-colors;
+              border: 1px solid $bt-colors;
+              font-weight: bold;
+              transition: all 300ms linear;
+              &:hover{
+                color: white;
+                background-color: $bt-colors;
+                cursor: pointer;
+              }
+            }
+            >textarea{
+              width: 460px;
+              padding: 15px 20px;
+              margin: 20px 0;
+              border: 1px solid #817f86;
+              color: #817f86;
+              resize: none;
+              box-sizing: border-box;
+            }
+          }
+        }
+        >div.brands{
+          >h2{
+            text-transform: uppercase;
+            font-family: Castellar;
+            text-align: center;
+          }
+          >div.brand-items{
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            margin-top: 20px;
+            >div.left-brands{
+              display: flex;
+              flex-flow: column;
+              margin-right: 40px;
+              >img{
+                width: 160px ;
+                height: 60px;
+                margin: 20px 0;
+                object-fit: contain;
+              }
+            }
+            >div.right-brands{
+              display: flex;
+              flex-flow: column;
+              margin-left: 40px;
+              >img{
+                width: 160px ;
+                height: 60px;
+                margin: 20px 0;
+                object-fit: contain;
+              }
+            }
+
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end sm reviews ------------------------------
+    */
+
+
+    /*
+    ------------------------------ sm footer ------------------------------
+    */
+    section.footer{
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      background: url("../images/background3.jpg") no-repeat;
+      object-fit: cover;
+      >div.row{
+        background-color: rgba(65, 50, 102, 0.8);
+        padding: 70px 0;
+        >footer.col-xl-8{
+          display: flex;
+          flex-flow: column;
+          >div.about{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin-bottom: 40px;
+            >div.logo{
+              display: flex;
+              flex-flow: wrap;
+              font-size: 28px;
+              font-weight: lighter;
+              margin-bottom: 25px;
+              color: $bt-colors;
+              >img{
+                width: 50px;
+                height: 50px;
+              }
+              >span{
+                display:flex;
+                margin: 0 10px;
+                align-items: center;
+              }
+            }
+            >p{
+              font-size: 14px;
+              margin-bottom: 40px;
+              color: white;
+              text-align: center;
+            }
+            >ul{
+              list-style: none;
+              display: flex;
+              flex-flow: row wrap;
+              >li{
+                text-transform: uppercase;
+                margin: 0 15px;
+                font-size: 14px;
+                color: white;
+                transition: all 300ms linear;
+                cursor: pointer;
+                &:hover{
+                  color: $bt-colors;
+                }
+              }
+            }
+          }
+          >div.location{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin: 40px 0;
+            >h3{
+              color: white;
+              text-transform: uppercase;
+              font-size: 15px;
+            }
+            >p{
+              color: white;
+              font-size: 14px;
+              >i{
+                margin-right: 15px;
+              }
+            }
+            >span{
+              color: white;
+              >i{
+                margin-right: 15px;
+              }
+            }
+          }
+          >div.social{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            >h3{
+              color: white;
+              text-transform: uppercase;
+            }
+            >div.sub{
+              display: flex;
+              align-content: center;
+              margin-bottom: 40px;
+              >input#subscribe{
+                text-align: center;
+                background-color: transparent;
+                font-size: 15px;
+                padding: 15px;
+                margin-right: 10px;
+                font-family: Serif;
+                box-shadow: none;
+                color: #a099b3;
+                border: 1px solid #a099b3;
+              }
+              >input#sub-submit{
+                height: 50px;
+                width: 70px;
+                background-color: #a199b4;
+                border: none;
+                font-family: Castellar;
+                text-transform: capitalize;
+                transition: all 300ms linear;
+                &:hover{
+                  background-color: white;
+                  color: #655c80;
+                  cursor: pointer;
+                }
+              }
+            }
+            >div.socials{
+              >i{
+                border: 1px solid white;
+                color: white;
+                padding: 10px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+                transition: all 300ms linear;
+                &:hover{
+                  background-color: white;
+                  color: $bt-colors;
+                  cursor: pointer;
+                }
+              }
+            }
+            >span{
+              width: 100%;
+              text-align: center;
+              color: white;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end sm footer ------------------------------
+    */
+
+  }
+}
+/*
+end media sm
+ */
+
+
+/*
+media xs
+ */
+@mixin MediaXS(){
+  @media  (max-width: 540px){
+
+    @each $i in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12{
+      .col-xs-#{$i}{
+        width: 8.333333% * $i;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    div.container *{
+      transition: all 300ms linear;
+    }
+
+    /*
+    ---------------------------------- xs menu ---------------------------
+    */
+    section.header{
+      width: 100%;
+      z-index: 10;
+      position: fixed;
+      background-color: #676380;
+      padding-top: 15px;
+      >div.row{
+        >div.col-xl-8{
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          >div.logo{
+            display: flex;
+            flex-flow: wrap;
+            font-size: 28px;
+            color: $bt-colors;
+            >img{
+              width: 50px;
+              height: 50px;
+            }
+            >span{
+              display:flex;
+              margin: 0 10px;
+              align-items: center;
+            }
+          }
+        }
+        div.menu{
+          display: flex;
+          align-items: center;
+          >nav{
+            >ul{
+              display: flex;
+              flex-flow: row;
+              list-style: none;
+              >li{
+                margin: 0 10px;
+                >a{
+                  font-size: 11px;
+                  color: #ffffff;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  transition: all 300ms linear;
+                  &:hover{
+                    color: $bt-colors;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ----------------------------- end xs menu ----------------------------
+     */
+
+
+
+    /*
+    ------------------------------ xs slider -------------------------------
+     */
+    section.slider{
+      height: 600px;
+      background: url("../images/background1.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.swiper{
+        >div.swiper-wrapper{
+          >div.swiper-slide{
+            height: 650px;
+            background-color: rgba(46, 39, 77, 0.7);
+            padding: 70px 0;
+            box-sizing: border-box;
+            >div.content{
+              display: flex;
+              flex-flow: column;
+              color: white;
+              padding: 30px 0;
+              >h1{
+                font-family:  "Copperplate Gothic Bold";
+                font-size: 26pt;
+                color: #ffffff;
+              }
+              >div.vl{
+                content: "";
+                width: 60px;
+                margin: 0 auto;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                background-color: $bt-colors;
+                height: 1px;
+                border: 0;
+              }
+              >p{
+                font-size: 12pt;
+              }
+              >a{
+                display: flex;
+                font-size: 12px;
+                font-family: "Serif";
+                align-self: center;
+                margin: 50px 0;
+                padding: 10px 15px;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $bt-colors;
+                border: 1px solid $bt-colors;
+                transition: all 300ms linear;
+                &:hover{
+                  color: white;
+                  background-color: $bt-colors;
+                  border: 1px solid white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xs slider ---------------------------
+     */
+
+
+    /*
+    ------------------------------ xs about ------------------------------
+     */
+    section.about{
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      margin: 70px 0;
+      >div.our-story{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        >div.logo{
+          display: flex;
+          justify-content: center;
+        }
+        >div.content{
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          >h2{
+            font-family: Castellar;
+            font-size: 22pt;
+            text-transform: uppercase;
+            margin: 30px 0;
+          }
+          >p{
+            text-align: center;
+            font-size: 14px;
+            color: #817f86;
+          }
+          >a{
+            display: inline-block;
+            font-family: "Serif";
+            font-size: 14px;
+            margin-top: 30px;
+            padding: 10px 15px;
+            color: $bt-colors;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 1px solid $bt-colors;
+            transition: all 300ms linear;
+            cursor: pointer;
+            &:hover{
+              color: white;
+              background-color: $bt-colors;
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xs about ---------------------------
+     */
+
+    /*
+    ------------------------------ xs videos ------------------------------
+     */
+    section.videos{
+      background: url("../images/background-2.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.row{
+        background-color: rgba(58, 50, 92, 0.80);
+        height: 400px;
+        align-items: center;
+        >div.col-xl-8{
+          justify-content: center;
+          >div.content{
+            display: flex;
+            flex-flow: column;
+            text-align: center;
+            >a{
+              font-size: 100px;
+              text-transform: uppercase;
+              margin-bottom: 30px;
+              color: white;
+              transition: all 300ms linear;
+              &:hover{
+                color: $bt-colors;
+              }
+            }
+            >span{
+              text-transform: uppercase;
+              color: white;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------  end xs videos ------------------------------
+    */
+
+
+    /*
+    ------------------------------ xs expertise ---------------------------
+     */
+    section.expertise{
+      display: flex;
+      justify-content: center;
+      margin: 70px 0;
+      >div.col-xl-8{
+        flex-flow: column;
+        >div.header{
+          >h1{
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+          }
+          >h3{
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+          }
+          >div.vl{
+            content: "";
+            width: 60px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #c6c4c9;
+            height: 1px;
+            border: 0;
+          }
+        }
+        >div.exp-items{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: center;
+          >div.col-xl-2{
+            display: flex;
+            flex-flow: column;
+            width: 300px;
+            padding: 40px 30px;
+            text-align: center;
+            border: 1px solid #c6c4c9;
+            >i{
+              color: $bt-colors;
+              font-size: 42px;
+            }
+            >h3{
+              font-size: 14px;
+              text-transform: uppercase;
+              margin: 30px 0;
+            }
+            >p{
+              font-size: 14px;
+              color: #817f86;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xs expertise-------------------------
+     */
+
+
+    /*
+    ------------------------------ xs team ------------------------------
+    */
+    section.team{
+      background: url("../images/background1.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.row{
+        background-color: rgba(58, 50, 92, 0.80);
+        padding: 70px 0;
+        box-sizing: border-box;
+        >div.col-xl-8{
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          >div.header{
+            text-align: center;
+            margin-bottom: 50px;
+            >h1{
+              color: #ffffff;
+            }
+            >h3{
+              color: #ffffff;
+              font-weight: lighter;
+            }
+            >div.vl{
+              content: "";
+              width: 50px;
+              margin: 0 auto;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              background-color: #655c80;
+              height: 2px;
+              border: 0;
+            }
+          }
+          >div.content{
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            >div.col-xl-3{
+              display: flex;
+              flex-flow: column;
+              width: 215px;
+              margin: 10px;
+              border: 1px solid white;
+              >div.top{
+                >img{
+                  width: 100%;
+                  height: 230px;
+                  background-color: white;
+                }
+              }
+              >div.bottom{
+                width: 100%;
+                text-align: center;
+                color: #ffffff;
+                >h5{
+                  font-size: 14px;
+                  font-weight: bold;
+                  margin-top: 20px;
+                }
+                >h6{
+                  font-size: 12px;
+                  color: #9f9cb1;
+                  font-weight: lighter;
+                  text-transform: uppercase;
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }
+          >div.bottom{
+            text-align: center;
+            margin-top: 70px;
+            >h3{
+              color: white;
+              font-size: 14px;
+              font-weight: 100;
+              margin-bottom: 25px;
+            }
+            >a{
+              font-family: Serif;
+              color: $bt-colors;
+              padding: 15px;
+              font-size: 16px;
+              text-transform: uppercase;
+              text-decoration: none;
+              border: 1px solid $bt-colors;
+              transition: all 300ms linear;
+              &:hover{
+                color: white;
+                border: 1px solid white;
+                background-color: $bt-colors;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xs team --------------------------
+    */
+
+
+    /*
+    ------------------------------ xs projects ------------------------------
+    */
+    section.projects{
+      display: flex;
+      flex-flow: column;
+      margin: 70px 0;
+      >div.header{
+        flex-flow: column;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        >h3{
+          font-family: Castellar;
+        }
+        >h4{
+          font-size: 14px;
+          font-weight: 100;
+          text-transform: capitalize;
+          cursor: pointer;
+          transition: all 300ms linear;
+          &:hover{
+            color: $bt-colors;
+          }
+        }
+      }
+      >div.project-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-flow: wrap;
+        >div.col-xl-2{
+          display: flex;
+          flex-flow: column;
+          width: 300px;
+          text-align: center;
+          >img{
+            width: 100%;
+            height: 200px;
+            background-color: #817f86;
+          }
+        }
+      }
+      >div.button{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        >a{
+          font-family: Serif;
+          color: $bt-colors;
+          padding: 15px 30px;
+          text-transform: uppercase;
+          font-weight: bold;
+          text-decoration: none;
+          border: 1px solid $bt-colors;
+          transition: all 300ms linear;
+          &:hover{
+            color: white;
+            background-color: $bt-colors;
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xs projects ------------------------------
+    */
+
+
+    /*
+    ------------------------------ xs quotes ------------------------------
+    */
+    section.quotes{
+      height: 500px;
+      background: url("../images/background3.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      >div.swiper{
+        >div.swiper-wrapper{
+          >div.swiper-slide{
+            background-color: rgba(46, 39, 77, 0.7);
+            box-sizing: border-box;
+            >div.content{
+              display: flex;
+              flex-flow: column;
+              color: white;
+              >i{
+                font-size: 32px;
+              }
+              >p{
+                font-size: 14px;
+                margin: 50px 0;
+              }
+              >span.name {
+                font-size: 14px;
+              }
+              >span.position{
+                font-size: 12px;
+                font-weight: 100;
+                color: #cfced4;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xs quotes ------------------------------
+    */
+
+
+    /*
+    ------------------------------ xs reviews ------------------------------
+    */
+    section.review{
+      display: flex;
+      justify-content: center;
+      margin: 70px 0;
+      >div.col-xl-8{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        div.forms{
+          >h2{
+            text-transform: uppercase;
+            text-align: center;
+            font-family: Castellar;
+          }
+          >form{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            >input{
+              width: 300px;
+              padding: 15px 20px;
+              margin: 20px 0;
+              border: 1px solid #817f86;
+              color: #817f86;
+              font-size: 14px;
+              box-sizing: border-box;
+            }
+            >input#submit{
+              width: 100px;
+              padding: 5px 15px;
+              background-color: white;
+              color: $bt-colors;
+              border: 1px solid $bt-colors;
+              font-weight: bold;
+              transition: all 300ms linear;
+              &:hover{
+                color: white;
+                background-color: $bt-colors;
+                cursor: pointer;
+              }
+            }
+            >textarea{
+              width: 300px;
+              padding: 15px 20px;
+              margin: 20px 0;
+              border: 1px solid #817f86;
+              color: #817f86;
+              resize: none;
+              box-sizing: border-box;
+            }
+          }
+        }
+        >div.brands{
+          >h2{
+            text-transform: uppercase;
+            font-family: Castellar;
+            text-align: center;
+          }
+          >div.brand-items{
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            margin-top: 20px;
+            >div.left-brands{
+              display: flex;
+              flex-flow: column;
+              margin-right: 40px;
+              >img{
+                width: 100px ;
+                height: 40px;
+                margin: 20px 0;
+                object-fit: contain;
+              }
+            }
+            >div.right-brands{
+              display: flex;
+              flex-flow: column;
+              margin-left: 40px;
+              >img{
+                width: 100px ;
+                height: 40px;
+                margin: 20px 0;
+                object-fit: contain;
+              }
+            }
+
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xs reviews ------------------------------
+    */
+
+
+    /*
+    ------------------------------ xs footer ------------------------------
+    */
+    section.footer{
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      background: url("../images/background1.jpg") no-repeat;
+      object-fit: cover;
+      >div.row{
+        background-color: rgba(65, 50, 102, 0.8);
+        padding: 70px 0;
+        >footer.col-xl-8{
+          display: flex;
+          flex-flow: column;
+          >div.about{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin-bottom: 40px;
+            >div.logo{
+              display: flex;
+              flex-flow: wrap;
+              font-size: 28px;
+              font-weight: lighter;
+              margin-bottom: 25px;
+              color: $bt-colors;
+              >img{
+                width: 50px;
+                height: 50px;
+              }
+              >span{
+                display:flex;
+                margin: 0 10px;
+                align-items: center;
+              }
+            }
+            >p{
+              font-size: 14px;
+              margin-bottom: 40px;
+              color: white;
+              text-align: center;
+            }
+            >ul{
+              list-style: none;
+              display: flex;
+              flex-flow: row wrap;
+              >li{
+                text-transform: uppercase;
+                margin: 0 15px;
+                font-size: 14px;
+                color: white;
+                transition: all 300ms linear;
+                cursor: pointer;
+                &:hover{
+                  color: $bt-colors;
+                }
+              }
+            }
+          }
+          >div.location{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin: 40px 0;
+            >h3{
+              color: white;
+              text-transform: uppercase;
+              font-size: 15px;
+            }
+            >p{
+              color: white;
+              font-size: 14px;
+              >i{
+                margin-right: 15px;
+              }
+            }
+            >span{
+              color: white;
+              >i{
+                margin-right: 15px;
+              }
+            }
+          }
+          >div.social{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            >h3{
+              color: white;
+              text-transform: uppercase;
+            }
+            >div.sub{
+              display: flex;
+              align-content: center;
+              margin-bottom: 40px;
+              >input#subscribe{
+                text-align: center;
+                background-color: transparent;
+                font-size: 15px;
+                padding: 15px;
+                margin-right: 10px;
+                font-family: Serif;
+                box-shadow: none;
+                color: #a099b3;
+                border: 1px solid #a099b3;
+              }
+              >input#sub-submit{
+                height: 50px;
+                width: 70px;
+                background-color: #a199b4;
+                border: none;
+                font-family: Castellar;
+                text-transform: capitalize;
+                transition: all 300ms linear;
+                &:hover{
+                  background-color: white;
+                  color: #655c80;
+                  cursor: pointer;
+                }
+              }
+            }
+            >div.socials{
+              >i{
+                border: 1px solid white;
+                color: white;
+                padding: 10px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+                transition: all 300ms linear;
+                &:hover{
+                  background-color: white;
+                  color: $bt-colors;
+                  cursor: pointer;
+                }
+              }
+            }
+            >span{
+              width: 100%;
+              text-align: center;
+              color: white;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    /*
+    ------------------------------ end xs footer ------------------------------
+    */
+
+  }
+}
+/*
+media xs
+ */

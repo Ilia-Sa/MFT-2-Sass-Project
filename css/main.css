@@ -1,0 +1,3438 @@
+/*
+media xl
+ */
+/*
+end media xl
+ */
+/*
+media lg
+ */
+/*
+end media lg
+ */
+/*
+media md
+ */
+/*
+end media md
+ */
+/*
+media sm
+ */
+/*
+end media sm
+ */
+/*
+media xs
+ */
+/*
+media xs
+ */
+/*
+setting
+ */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Myanmar Text", Serif; }
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+/*
+end setting
+ */
+/*
+media xl
+ */
+@media (min-width: 1200px) {
+  .col-xl-1 {
+    width: 8.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xl-2 {
+    width: 16.66667%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xl-3 {
+    width: 25.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xl-4 {
+    width: 33.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xl-5 {
+    width: 41.66666%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xl-6 {
+    width: 50.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xl-7 {
+    width: 58.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xl-8 {
+    width: 66.66666%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xl-9 {
+    width: 75.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xl-10 {
+    width: 83.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xl-11 {
+    width: 91.66666%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xl-12 {
+    width: 100.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  div.container * {
+    transition: all linear; }
+  /*
+   ---------------------------------- xl menu -----------------------
+     */
+  section.header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: #676380;
+    padding-top: 15px; }
+    section.header > div.row > div.col-xl-8 > div.logo {
+      display: flex;
+      flex-flow: wrap;
+      font-size: 28px;
+      color: #00e0d0; }
+      section.header > div.row > div.col-xl-8 > div.logo > img {
+        width: 50px;
+        height: 50px; }
+      section.header > div.row > div.col-xl-8 > div.logo > span {
+        display: flex;
+        margin: 0 10px;
+        align-items: center; }
+    section.header > div.row div.menu {
+      display: flex;
+      align-items: center; }
+      section.header > div.row div.menu > nav > ul {
+        display: flex;
+        flex-flow: row;
+        list-style: none; }
+        section.header > div.row div.menu > nav > ul > li {
+          margin: 0 10px; }
+          section.header > div.row div.menu > nav > ul > li > a {
+            font-size: 13px;
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 300ms linear; }
+            section.header > div.row div.menu > nav > ul > li > a:hover {
+              color: #00e0d0; }
+  /*
+    ----------------------------- end xl menu -------------------------
+     */
+  /*
+    ------------------------------ xl slider -------------------------------
+     */
+  section.slider {
+    height: 600px;
+    background: url("../images/background1.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide {
+      height: 600px;
+      background-color: rgba(46, 39, 77, 0.7);
+      padding: 70px 0;
+      box-sizing: border-box; }
+      section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content {
+        display: flex;
+        flex-flow: column;
+        color: white; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > h1 {
+          font-family: "Copperplate Gothic Bold";
+          font-size: 32pt;
+          color: #ffffff; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > div.vl {
+          content: "";
+          width: 60px;
+          margin: 0 auto;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          background-color: #00e0d0;
+          height: 1px;
+          border: 0; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > p {
+          font-size: 14pt; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > a {
+          display: flex;
+          font-size: 14px;
+          font-family: "Serif";
+          align-self: center;
+          margin: 50px 0;
+          padding: 10px 15px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #00e0d0;
+          border: 1px solid #00e0d0;
+          transition: all 300ms linear; }
+          section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > a:hover {
+            color: white;
+            background-color: #00e0d0;
+            border: 1px solid white; }
+  /*
+    ------------------------------ end xl slider ---------------------------
+     */
+  /*
+    ------------------------------ xl about ------------------------------
+     */
+  section.about {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 70px 0; }
+    section.about > div.our-story {
+      box-sizing: border-box; }
+      section.about > div.our-story > div.logo {
+        margin-right: 50px; }
+      section.about > div.our-story > div.content {
+        margin-left: 50px; }
+        section.about > div.our-story > div.content > h2 {
+          font-family: Castellar;
+          font-size: 22pt;
+          text-transform: uppercase;
+          margin-bottom: 30px; }
+        section.about > div.our-story > div.content > p {
+          font-size: 14px;
+          color: #817f86; }
+        section.about > div.our-story > div.content > a {
+          display: inline-block;
+          font-family: "Serif";
+          font-size: 14px;
+          margin-top: 30px;
+          padding: 10px 15px;
+          color: #00e0d0;
+          text-decoration: none;
+          text-transform: uppercase;
+          border: 1px solid #00e0d0;
+          transition: all 300ms linear;
+          cursor: pointer; }
+          section.about > div.our-story > div.content > a:hover {
+            color: white;
+            background-color: #00e0d0;
+            border: 1px solid white; }
+  /*
+    ------------------------------ end xl about ---------------------------
+     */
+  /*
+    ------------------------------ xl videos ------------------------------
+     */
+  section.videos {
+    background: url("../images/background-2.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.videos > div.row {
+      background-color: rgba(58, 50, 92, 0.8);
+      height: 400px;
+      align-items: center; }
+      section.videos > div.row > div.col-xl-8 {
+        justify-content: center; }
+        section.videos > div.row > div.col-xl-8 > div.content {
+          display: flex;
+          flex-flow: column;
+          text-align: center; }
+          section.videos > div.row > div.col-xl-8 > div.content > a {
+            font-size: 100px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: white;
+            transition: all 300ms linear; }
+            section.videos > div.row > div.col-xl-8 > div.content > a:hover {
+              color: #00e0d0; }
+          section.videos > div.row > div.col-xl-8 > div.content > span {
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold; }
+  /*
+    ------------------------------ end xl videos ------------------------------
+    */
+  /*
+    ------------------------------ xl expertise ---------------------------
+     */
+  section.expertise {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0; }
+    section.expertise > div.col-xl-8 {
+      flex-flow: column; }
+      section.expertise > div.col-xl-8 > div.header > h1 {
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase; }
+      section.expertise > div.col-xl-8 > div.header > h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 14px; }
+      section.expertise > div.col-xl-8 > div.header > div.vl {
+        content: "";
+        width: 60px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #c6c4c9;
+        height: 1px;
+        border: 0; }
+      section.expertise > div.col-xl-8 > div.exp-items {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; }
+        section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 {
+          display: flex;
+          flex-flow: column;
+          flex: 33.33333%;
+          width: 100%;
+          padding: 40px 30px;
+          text-align: center;
+          border: 1px solid #c6c4c9; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 > i {
+            color: #00e0d0;
+            font-size: 42px; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 > h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin: 30px 0; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 > p {
+            font-size: 14px;
+            color: #817f86; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(1), section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(4) {
+            border-left: none;
+            border-top: none; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(3), section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(6) {
+            border-right: none;
+            border-top: none; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(4), section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(6) {
+            border-bottom: none; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(2) {
+            border-top: none;
+            border-bottom: none; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(5) {
+            border-bottom: none; }
+  /*
+    ------------------------------ end xl expertise-------------------------
+     */
+  /*
+    ------------------------------ xl team ------------------------------
+    */
+  section.team {
+    background: url("../images/background1.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.team > div.row {
+      background-color: rgba(58, 50, 92, 0.8);
+      padding: 70px 0;
+      box-sizing: border-box; }
+      section.team > div.row > div.col-xl-8 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center; }
+        section.team > div.row > div.col-xl-8 > div.header {
+          text-align: center;
+          margin-bottom: 50px; }
+          section.team > div.row > div.col-xl-8 > div.header > h1 {
+            color: #ffffff; }
+          section.team > div.row > div.col-xl-8 > div.header > h3 {
+            color: #ffffff;
+            font-weight: lighter; }
+          section.team > div.row > div.col-xl-8 > div.header > div.vl {
+            content: "";
+            width: 50px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #655c80;
+            height: 2px;
+            border: 0; }
+        section.team > div.row > div.col-xl-8 > div.content {
+          display: flex;
+          flex-flow: row;
+          flex-wrap: wrap;
+          justify-content: center; }
+          section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 {
+            display: flex;
+            flex-flow: column;
+            width: 215px;
+            margin: 10px;
+            border: 1px solid white; }
+            section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.top > img {
+              width: 100%;
+              height: 235px;
+              background-color: white; }
+            section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.bottom {
+              width: 100%;
+              text-align: center;
+              color: #ffffff; }
+              section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.bottom > h5 {
+                font-size: 14px;
+                font-weight: bold;
+                margin-top: 20px; }
+              section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.bottom > h6 {
+                font-size: 12px;
+                color: #9f9cb1;
+                font-weight: lighter;
+                text-transform: uppercase;
+                margin-bottom: 20px; }
+        section.team > div.row > div.col-xl-8 > div.bottom {
+          text-align: center;
+          margin-top: 70px; }
+          section.team > div.row > div.col-xl-8 > div.bottom > h3 {
+            color: white;
+            font-size: 14px;
+            font-weight: 100;
+            margin-bottom: 25px; }
+          section.team > div.row > div.col-xl-8 > div.bottom > a {
+            font-family: Serif;
+            color: #00e0d0;
+            padding: 15px;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 1px solid #00e0d0;
+            transition: all 300ms linear; }
+            section.team > div.row > div.col-xl-8 > div.bottom > a:hover {
+              color: white;
+              border: 1px solid white;
+              background-color: #00e0d0; }
+  /*
+    ------------------------------ end xl team --------------------------
+    */
+  /*
+    ------------------------------ xl projects ------------------------------
+    */
+  section.projects {
+    display: flex;
+    flex-flow: column;
+    margin: 70px 0; }
+    section.projects > div.header {
+      justify-self: center;
+      justify-content: space-between;
+      margin: 0 auto;
+      margin-bottom: 70px; }
+      section.projects > div.header > h3 {
+        font-family: Castellar; }
+      section.projects > div.header > h4 {
+        font-size: 14px;
+        font-weight: 100;
+        text-transform: capitalize;
+        cursor: pointer;
+        transition: all 300ms linear; }
+        section.projects > div.header > h4:hover {
+          color: #00e0d0; }
+    section.projects > div.project-items {
+      display: flex;
+      flex-direction: row;
+      flex-flow: wrap; }
+      section.projects > div.project-items > div.col-xl-2 {
+        display: flex;
+        flex-flow: column;
+        flex: 16.666667%;
+        width: 100%;
+        text-align: center; }
+        section.projects > div.project-items > div.col-xl-2 > img {
+          width: 100%;
+          height: 200px;
+          background-color: #817f86; }
+    section.projects > div.button {
+      display: flex;
+      justify-content: center;
+      margin-top: 70px; }
+      section.projects > div.button > a {
+        font-family: Serif;
+        color: #00e0d0;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        border: 1px solid #00e0d0;
+        transition: all 300ms linear; }
+        section.projects > div.button > a:hover {
+          color: white;
+          background-color: #00e0d0; }
+  /*
+    ------------------------------ end xl projects ------------------------------
+    */
+  /*
+    ------------------------------ xl quotes ------------------------------
+    */
+  section.quotes {
+    height: 500px;
+    background: url("../images/background3.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide {
+      background-color: rgba(46, 39, 77, 0.7);
+      box-sizing: border-box; }
+      section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content {
+        display: flex;
+        flex-flow: column;
+        color: white; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > i {
+          font-size: 32px; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > p {
+          font-size: 14px;
+          margin: 50px 0; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > span.name {
+          font-size: 14px; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > span.position {
+          font-size: 12px;
+          font-weight: 100;
+          color: #cfced4; }
+  /*
+    ------------------------------ end xl quotes ------------------------------
+    */
+  /*
+    ------------------------------ xl reviews ------------------------------
+    */
+  section.review {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0; }
+    section.review div.col-xl-8 {
+      display: flex;
+      justify-content: space-between; }
+      section.review div.col-xl-8 div.forms > h2 {
+        text-transform: uppercase;
+        font-family: Castellar; }
+      section.review div.col-xl-8 div.forms > form {
+        display: flex;
+        flex-flow: column; }
+        section.review div.col-xl-8 div.forms > form > input {
+          width: 460px;
+          padding: 15px 20px;
+          margin: 20px 0;
+          border: 1px solid #817f86;
+          color: #817f86;
+          font-size: 14px;
+          box-sizing: border-box; }
+        section.review div.col-xl-8 div.forms > form > input#submit {
+          width: 140px;
+          padding: 10px 30px;
+          background-color: white;
+          color: #00e0d0;
+          border: 1px solid #00e0d0;
+          font-weight: bold;
+          transition: all 300ms linear; }
+          section.review div.col-xl-8 div.forms > form > input#submit:hover {
+            color: white;
+            background-color: #00e0d0;
+            cursor: pointer; }
+        section.review div.col-xl-8 div.forms > form > textarea {
+          width: 460px;
+          padding: 15px 20px;
+          margin: 20px 0;
+          border: 1px solid #817f86;
+          color: #817f86;
+          resize: none;
+          box-sizing: border-box; }
+      section.review div.col-xl-8 div.brands {
+        width: 50%; }
+        section.review div.col-xl-8 div.brands > h2 {
+          text-transform: uppercase;
+          font-family: Castellar;
+          text-align: left; }
+        section.review div.col-xl-8 div.brands > div.brand-items {
+          display: flex;
+          flex-flow: row;
+          margin-top: 20px; }
+          section.review div.col-xl-8 div.brands > div.brand-items > div.left-brands {
+            display: flex;
+            flex-flow: column;
+            margin-right: 40px; }
+            section.review div.col-xl-8 div.brands > div.brand-items > div.left-brands > img {
+              width: 160px;
+              height: 60px;
+              margin: 20px 0;
+              object-fit: contain; }
+          section.review div.col-xl-8 div.brands > div.brand-items > div.right-brands {
+            display: flex;
+            flex-flow: column;
+            margin-left: 40px; }
+            section.review div.col-xl-8 div.brands > div.brand-items > div.right-brands > img {
+              width: 160px;
+              height: 60px;
+              margin: 20px 0;
+              object-fit: contain; }
+  /*
+    ------------------------------ end xl reviews ------------------------------
+    */
+  /*
+    ------------------------------ xl footer ------------------------------
+    */
+  section.footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background: url("../images/background1.jpg") no-repeat;
+    object-fit: cover; }
+    section.footer > div.row {
+      background-color: rgba(65, 50, 102, 0.8);
+      padding: 70px 0; }
+      section.footer > div.row > footer.col-xl-8 > div.about {
+        display: flex;
+        flex-flow: column;
+        margin-right: 10px; }
+        section.footer > div.row > footer.col-xl-8 > div.about > div.logo {
+          display: flex;
+          flex-flow: wrap;
+          font-size: 28px;
+          font-weight: lighter;
+          margin-bottom: 25px;
+          color: #00e0d0; }
+          section.footer > div.row > footer.col-xl-8 > div.about > div.logo > img {
+            width: 50px;
+            height: 50px; }
+          section.footer > div.row > footer.col-xl-8 > div.about > div.logo > span {
+            display: flex;
+            margin: 0 10px;
+            align-items: center; }
+        section.footer > div.row > footer.col-xl-8 > div.about > p {
+          font-size: 14px;
+          margin-bottom: 80px;
+          color: white; }
+        section.footer > div.row > footer.col-xl-8 > div.about > ul {
+          list-style: none;
+          display: flex;
+          flex-flow: row wrap; }
+          section.footer > div.row > footer.col-xl-8 > div.about > ul > li {
+            text-transform: uppercase;
+            margin: 0 15px;
+            font-size: 14px;
+            color: white;
+            transition: all 300ms linear;
+            cursor: pointer; }
+            section.footer > div.row > footer.col-xl-8 > div.about > ul > li:hover {
+              color: #00e0d0; }
+      section.footer > div.row > footer.col-xl-8 > div.location {
+        display: flex;
+        flex-flow: column;
+        align-content: flex-start;
+        margin-left: 10px;
+        height: 170px; }
+        section.footer > div.row > footer.col-xl-8 > div.location > h3 {
+          color: white;
+          text-transform: uppercase;
+          font-size: 15px; }
+        section.footer > div.row > footer.col-xl-8 > div.location > p {
+          color: white;
+          font-size: 14px; }
+          section.footer > div.row > footer.col-xl-8 > div.location > p > i {
+            margin-right: 15px; }
+        section.footer > div.row > footer.col-xl-8 > div.location > span {
+          color: white; }
+          section.footer > div.row > footer.col-xl-8 > div.location > span > i {
+            margin-right: 15px; }
+      section.footer > div.row > footer.col-xl-8 > div.social {
+        display: flex;
+        flex-flow: column;
+        margin-left: 10px; }
+        section.footer > div.row > footer.col-xl-8 > div.social > h3 {
+          color: white;
+          text-transform: uppercase; }
+        section.footer > div.row > footer.col-xl-8 > div.social > div.sub {
+          display: flex;
+          align-content: center; }
+          section.footer > div.row > footer.col-xl-8 > div.social > div.sub > input#subscribe {
+            text-align: center;
+            background-color: transparent;
+            font-size: 15px;
+            padding: 15px;
+            margin-right: 10px;
+            font-family: Serif;
+            box-shadow: none;
+            color: #a099b3;
+            border: 1px solid #a099b3; }
+          section.footer > div.row > footer.col-xl-8 > div.social > div.sub > input#sub-submit {
+            height: 50px;
+            width: 70px;
+            background-color: #a199b4;
+            border: none;
+            font-family: Castellar;
+            text-transform: capitalize;
+            transition: all 300ms linear; }
+            section.footer > div.row > footer.col-xl-8 > div.social > div.sub > input#sub-submit:hover {
+              background-color: white;
+              color: #655c80;
+              cursor: pointer; }
+        section.footer > div.row > footer.col-xl-8 > div.social > div.socials > i {
+          border: 1px solid white;
+          color: white;
+          padding: 10px;
+          border-radius: 50%;
+          transition: all 300ms linear; }
+          section.footer > div.row > footer.col-xl-8 > div.social > div.socials > i:hover {
+            background-color: white;
+            color: #00e0d0;
+            cursor: pointer; }
+        section.footer > div.row > footer.col-xl-8 > div.social > span {
+          width: 100%;
+          text-align: right;
+          color: white;
+          font-size: 14px; }
+  /*
+    ------------------------------ end xl footer ------------------------------
+    */ }
+
+/*
+end media xl
+ */
+/*
+media lg
+ */
+@media (min-width: 990px) and (max-width: 1200px) {
+  .col-lg-1 {
+    width: 8.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-lg-2 {
+    width: 16.66667%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-lg-3 {
+    width: 25.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-lg-4 {
+    width: 33.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-lg-5 {
+    width: 41.66666%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-lg-6 {
+    width: 50.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-lg-7 {
+    width: 58.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-lg-8 {
+    width: 66.66666%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-lg-9 {
+    width: 75.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-lg-10 {
+    width: 83.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-lg-11 {
+    width: 91.66666%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-lg-12 {
+    width: 100.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  div.container * {
+    transition: all 300ms linear; }
+  /*
+    ---------------------------------- lg menu -----------------------
+    */
+  section.header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: #676380;
+    padding-top: 15px; }
+    section.header > div.row > div.col-xl-8 > div.logo {
+      display: flex;
+      flex-flow: wrap;
+      font-size: 28px;
+      color: #00e0d0; }
+      section.header > div.row > div.col-xl-8 > div.logo > img {
+        width: 50px;
+        height: 50px; }
+      section.header > div.row > div.col-xl-8 > div.logo > span {
+        display: flex;
+        margin: 0 10px;
+        align-items: center; }
+    section.header > div.row div.menu {
+      display: flex;
+      align-items: center; }
+      section.header > div.row div.menu > nav > ul {
+        display: flex;
+        flex-flow: row;
+        list-style: none; }
+        section.header > div.row div.menu > nav > ul > li {
+          margin: 0 10px; }
+          section.header > div.row div.menu > nav > ul > li > a {
+            font-size: 13px;
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 300ms linear; }
+            section.header > div.row div.menu > nav > ul > li > a:hover {
+              color: #00e0d0; }
+  /*
+    ----------------------------- end lg menu -------------------------
+     */
+  /*
+    ------------------------------ lg slider -------------------------------
+     */
+  section.slider {
+    height: 600px;
+    background: url("../images/background1.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide {
+      height: 600px;
+      background-color: rgba(46, 39, 77, 0.7);
+      padding: 70px 0;
+      box-sizing: border-box; }
+      section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content {
+        display: flex;
+        flex-flow: column;
+        color: white; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > h1 {
+          font-family: "Copperplate Gothic Bold";
+          font-size: 32pt;
+          color: #ffffff; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > div.vl {
+          content: "";
+          width: 60px;
+          margin: 0 auto;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          background-color: #00e0d0;
+          height: 1px;
+          border: 0; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > p {
+          font-size: 14pt; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > a {
+          display: flex;
+          font-size: 14px;
+          font-family: "Serif";
+          align-self: center;
+          margin: 50px 0;
+          padding: 10px 15px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #00e0d0;
+          border: 1px solid #00e0d0;
+          transition: all 300ms linear; }
+          section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > a:hover {
+            color: white;
+            background-color: #00e0d0;
+            border: 1px solid white; }
+  /*
+    ------------------------------ end lg slider ---------------------------
+     */
+  /*
+    ------------------------------ lg about ------------------------------
+     */
+  section.about {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 70px 0; }
+    section.about > div.our-story {
+      box-sizing: border-box; }
+      section.about > div.our-story > div.logo {
+        margin-right: 50px; }
+      section.about > div.our-story > div.content {
+        margin-left: 50px; }
+        section.about > div.our-story > div.content > h2 {
+          font-family: Castellar;
+          font-size: 22pt;
+          text-transform: uppercase;
+          margin-bottom: 30px; }
+        section.about > div.our-story > div.content > p {
+          font-size: 14px;
+          color: #817f86; }
+        section.about > div.our-story > div.content > a {
+          display: inline-block;
+          font-family: "Serif";
+          font-size: 14px;
+          margin-top: 30px;
+          padding: 10px 15px;
+          color: #00e0d0;
+          text-decoration: none;
+          text-transform: uppercase;
+          border: 1px solid #00e0d0;
+          transition: all 300ms linear;
+          cursor: pointer; }
+          section.about > div.our-story > div.content > a:hover {
+            color: white;
+            background-color: #00e0d0;
+            border: 1px solid white; }
+  /*
+    ------------------------------ end lg about ---------------------------
+     */
+  /*
+    ------------------------------ lg videos ------------------------------
+     */
+  section.videos {
+    background: url("../images/background-2.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.videos > div.row {
+      background-color: rgba(58, 50, 92, 0.8);
+      height: 400px;
+      align-items: center; }
+      section.videos > div.row > div.col-xl-8 {
+        justify-content: center; }
+        section.videos > div.row > div.col-xl-8 > div.content {
+          display: flex;
+          flex-flow: column;
+          text-align: center; }
+          section.videos > div.row > div.col-xl-8 > div.content > a {
+            font-size: 100px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: white;
+            transition: all 300ms linear; }
+            section.videos > div.row > div.col-xl-8 > div.content > a:hover {
+              color: #00e0d0; }
+          section.videos > div.row > div.col-xl-8 > div.content > span {
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold; }
+  /*
+    ------------------------------ end lg videos ------------------------------
+    */
+  /*
+    ------------------------------ lg expertise ---------------------------
+     */
+  section.expertise {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0; }
+    section.expertise > div.col-xl-8 {
+      flex-flow: column; }
+      section.expertise > div.col-xl-8 > div.header > h1 {
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase; }
+      section.expertise > div.col-xl-8 > div.header > h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 14px; }
+      section.expertise > div.col-xl-8 > div.header > div.vl {
+        content: "";
+        width: 60px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #c6c4c9;
+        height: 1px;
+        border: 0; }
+      section.expertise > div.col-xl-8 > div.exp-items {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; }
+        section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 {
+          display: flex;
+          flex-flow: column;
+          flex: 33.33333%;
+          width: 100%;
+          padding: 40px 30px;
+          text-align: center;
+          border: 1px solid #c6c4c9; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 > i {
+            color: #00e0d0;
+            font-size: 42px; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 > h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin: 30px 0; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 > p {
+            font-size: 14px;
+            color: #817f86; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(1), section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(4) {
+            border-left: none;
+            border-top: none; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(3), section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(6) {
+            border-right: none;
+            border-top: none; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(4), section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(6) {
+            border-bottom: none; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(2) {
+            border-top: none;
+            border-bottom: none; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2:nth-of-type(5) {
+            border-bottom: none; }
+  /*
+    ------------------------------ end lg expertise-------------------------
+     */
+  /*
+    ------------------------------ lg team ------------------------------
+    */
+  section.team {
+    background: url("../images/background1.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.team > div.row {
+      background-color: rgba(58, 50, 92, 0.8);
+      padding: 70px 0;
+      box-sizing: border-box; }
+      section.team > div.row > div.col-xl-8 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center; }
+        section.team > div.row > div.col-xl-8 > div.header {
+          text-align: center;
+          margin-bottom: 50px; }
+          section.team > div.row > div.col-xl-8 > div.header > h1 {
+            color: #ffffff; }
+          section.team > div.row > div.col-xl-8 > div.header > h3 {
+            color: #ffffff;
+            font-weight: lighter; }
+          section.team > div.row > div.col-xl-8 > div.header > div.vl {
+            content: "";
+            width: 50px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #655c80;
+            height: 2px;
+            border: 0; }
+        section.team > div.row > div.col-xl-8 > div.content {
+          display: flex;
+          flex-flow: row;
+          flex-wrap: wrap;
+          justify-content: center; }
+          section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 {
+            display: flex;
+            flex-flow: column;
+            width: 215px;
+            margin: 10px;
+            border: 1px solid white; }
+            section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.top > img {
+              width: 100%;
+              height: 230px;
+              background-color: white; }
+            section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.bottom {
+              width: 100%;
+              text-align: center;
+              color: #ffffff; }
+              section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.bottom > h5 {
+                font-size: 14px;
+                font-weight: bold;
+                margin-top: 20px; }
+              section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.bottom > h6 {
+                font-size: 12px;
+                color: #9f9cb1;
+                font-weight: lighter;
+                text-transform: uppercase;
+                margin-bottom: 20px; }
+        section.team > div.row > div.col-xl-8 > div.bottom {
+          text-align: center;
+          margin-top: 70px; }
+          section.team > div.row > div.col-xl-8 > div.bottom > h3 {
+            color: white;
+            font-size: 14px;
+            font-weight: 100;
+            margin-bottom: 25px; }
+          section.team > div.row > div.col-xl-8 > div.bottom > a {
+            font-family: Serif;
+            color: #00e0d0;
+            padding: 15px;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 1px solid #00e0d0;
+            transition: all 300ms linear; }
+            section.team > div.row > div.col-xl-8 > div.bottom > a:hover {
+              color: white;
+              border: 1px solid white;
+              background-color: #00e0d0; }
+  /*
+    ------------------------------ end lg team --------------------------
+    */
+  /*
+    ------------------------------ lg projects ------------------------------
+    */
+  section.projects {
+    display: flex;
+    flex-flow: column;
+    margin: 70px 0; }
+    section.projects > div.header {
+      justify-self: center;
+      justify-content: space-between;
+      margin: 0 auto;
+      margin-bottom: 70px; }
+      section.projects > div.header > h3 {
+        font-family: Castellar; }
+      section.projects > div.header > h4 {
+        font-size: 14px;
+        font-weight: 100;
+        text-transform: capitalize;
+        cursor: pointer;
+        transition: all 300ms linear; }
+        section.projects > div.header > h4:hover {
+          color: #00e0d0; }
+    section.projects > div.project-items {
+      display: flex;
+      flex-direction: row;
+      flex-flow: wrap; }
+      section.projects > div.project-items > div.col-xl-2 {
+        display: flex;
+        flex-flow: column;
+        flex: 16.666667%;
+        width: 100%;
+        text-align: center; }
+        section.projects > div.project-items > div.col-xl-2 > img {
+          width: 100%;
+          height: 200px;
+          background-color: #817f86; }
+    section.projects > div.button {
+      display: flex;
+      justify-content: center;
+      margin-top: 70px; }
+      section.projects > div.button > a {
+        font-family: Serif;
+        color: #00e0d0;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        border: 1px solid #00e0d0;
+        transition: all 300ms linear; }
+        section.projects > div.button > a:hover {
+          color: white;
+          background-color: #00e0d0; }
+  /*
+    ------------------------------ end lg projects ------------------------------
+    */
+  /*
+    ------------------------------ lg quotes ------------------------------
+    */
+  section.quotes {
+    height: 500px;
+    background: url("../images/background3.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide {
+      background-color: rgba(46, 39, 77, 0.7);
+      box-sizing: border-box; }
+      section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content {
+        display: flex;
+        flex-flow: column;
+        color: white; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > i {
+          font-size: 32px; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > p {
+          font-size: 14px;
+          margin: 50px 0; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > span.name {
+          font-size: 14px; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > span.position {
+          font-size: 12px;
+          font-weight: 100;
+          color: #cfced4; }
+  /*
+    ------------------------------ end lg quotes ------------------------------
+    */
+  /*
+    ------------------------------ lg reviews ------------------------------
+    */
+  section.review {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0; }
+    section.review div.col-xl-8 {
+      display: flex;
+      justify-content: space-between; }
+      section.review div.col-xl-8 div.forms > h2 {
+        text-transform: uppercase;
+        font-family: Castellar; }
+      section.review div.col-xl-8 div.forms > form {
+        display: flex;
+        flex-flow: column; }
+        section.review div.col-xl-8 div.forms > form > input {
+          width: 460px;
+          padding: 15px 20px;
+          margin: 20px 0;
+          border: 1px solid #817f86;
+          color: #817f86;
+          font-size: 14px;
+          box-sizing: border-box; }
+        section.review div.col-xl-8 div.forms > form > input#submit {
+          width: 140px;
+          padding: 10px 30px;
+          background-color: white;
+          color: #00e0d0;
+          border: 1px solid #00e0d0;
+          font-weight: bold;
+          transition: all 300ms linear; }
+          section.review div.col-xl-8 div.forms > form > input#submit:hover {
+            color: white;
+            background-color: #00e0d0;
+            cursor: pointer; }
+        section.review div.col-xl-8 div.forms > form > textarea {
+          width: 460px;
+          padding: 15px 20px;
+          margin: 20px 0;
+          border: 1px solid #817f86;
+          color: #817f86;
+          resize: none;
+          box-sizing: border-box; }
+      section.review div.col-xl-8 div.brands {
+        width: 50%; }
+        section.review div.col-xl-8 div.brands > h2 {
+          text-transform: uppercase;
+          font-family: Castellar;
+          text-align: left; }
+        section.review div.col-xl-8 div.brands > div.brand-items {
+          display: flex;
+          flex-flow: row;
+          margin-top: 20px; }
+          section.review div.col-xl-8 div.brands > div.brand-items > div.left-brands {
+            display: flex;
+            flex-flow: column;
+            margin-right: 40px; }
+            section.review div.col-xl-8 div.brands > div.brand-items > div.left-brands > img {
+              width: 160px;
+              height: 60px;
+              margin: 20px 0;
+              object-fit: contain; }
+          section.review div.col-xl-8 div.brands > div.brand-items > div.right-brands {
+            display: flex;
+            flex-flow: column;
+            margin-left: 40px; }
+            section.review div.col-xl-8 div.brands > div.brand-items > div.right-brands > img {
+              width: 160px;
+              height: 60px;
+              margin: 20px 0;
+              object-fit: contain; }
+  /*
+    ------------------------------ end lg reviews ------------------------------
+    */
+  /*
+    ------------------------------ lg footer ------------------------------
+    */
+  section.footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background: url("../images/background1.jpg") no-repeat;
+    object-fit: cover; }
+    section.footer > div.row {
+      background-color: rgba(65, 50, 102, 0.8);
+      padding: 70px 0; }
+      section.footer > div.row > footer.col-xl-8 > div.about {
+        display: flex;
+        flex-flow: column;
+        margin-right: 10px; }
+        section.footer > div.row > footer.col-xl-8 > div.about > div.logo {
+          display: flex;
+          flex-flow: wrap;
+          font-size: 28px;
+          font-weight: lighter;
+          margin-bottom: 25px;
+          color: #00e0d0; }
+          section.footer > div.row > footer.col-xl-8 > div.about > div.logo > img {
+            width: 50px;
+            height: 50px; }
+          section.footer > div.row > footer.col-xl-8 > div.about > div.logo > span {
+            display: flex;
+            margin: 0 10px;
+            align-items: center; }
+        section.footer > div.row > footer.col-xl-8 > div.about > p {
+          font-size: 14px;
+          margin-bottom: 80px;
+          color: white; }
+        section.footer > div.row > footer.col-xl-8 > div.about > ul {
+          list-style: none;
+          display: flex;
+          flex-flow: row wrap; }
+          section.footer > div.row > footer.col-xl-8 > div.about > ul > li {
+            text-transform: uppercase;
+            margin: 0 15px;
+            font-size: 14px;
+            color: white;
+            transition: all 300ms linear;
+            cursor: pointer; }
+            section.footer > div.row > footer.col-xl-8 > div.about > ul > li:hover {
+              color: #00e0d0; }
+      section.footer > div.row > footer.col-xl-8 > div.location {
+        display: flex;
+        flex-flow: column;
+        align-content: flex-start;
+        margin-left: 10px;
+        height: 170px; }
+        section.footer > div.row > footer.col-xl-8 > div.location > h3 {
+          color: white;
+          text-transform: uppercase;
+          font-size: 15px; }
+        section.footer > div.row > footer.col-xl-8 > div.location > p {
+          color: white;
+          font-size: 14px; }
+          section.footer > div.row > footer.col-xl-8 > div.location > p > i {
+            margin-right: 15px; }
+        section.footer > div.row > footer.col-xl-8 > div.location > span {
+          color: white; }
+          section.footer > div.row > footer.col-xl-8 > div.location > span > i {
+            margin-right: 15px; }
+      section.footer > div.row > footer.col-xl-8 > div.social {
+        display: flex;
+        flex-flow: column;
+        margin-left: 10px; }
+        section.footer > div.row > footer.col-xl-8 > div.social > h3 {
+          color: white;
+          text-transform: uppercase; }
+        section.footer > div.row > footer.col-xl-8 > div.social > div.sub {
+          display: flex;
+          align-content: center; }
+          section.footer > div.row > footer.col-xl-8 > div.social > div.sub > input#subscribe {
+            text-align: center;
+            background-color: transparent;
+            font-size: 15px;
+            padding: 15px;
+            margin-right: 10px;
+            font-family: Serif;
+            box-shadow: none;
+            color: #a099b3;
+            border: 1px solid #a099b3; }
+          section.footer > div.row > footer.col-xl-8 > div.social > div.sub > input#sub-submit {
+            height: 50px;
+            width: 70px;
+            background-color: #a199b4;
+            border: none;
+            font-family: Castellar;
+            text-transform: capitalize;
+            transition: all 300ms linear; }
+            section.footer > div.row > footer.col-xl-8 > div.social > div.sub > input#sub-submit:hover {
+              background-color: white;
+              color: #655c80;
+              cursor: pointer; }
+        section.footer > div.row > footer.col-xl-8 > div.social > div.socials > i {
+          border: 1px solid white;
+          color: white;
+          padding: 10px;
+          border-radius: 50%;
+          transition: all 300ms linear; }
+          section.footer > div.row > footer.col-xl-8 > div.social > div.socials > i:hover {
+            background-color: white;
+            color: #00e0d0;
+            cursor: pointer; }
+        section.footer > div.row > footer.col-xl-8 > div.social > span {
+          width: 100%;
+          text-align: right;
+          color: white;
+          font-size: 14px; }
+  /*
+    ------------------------------ end lg footer ------------------------------
+    */ }
+
+/*
+end media lg
+ */
+/*
+media md
+ */
+@media (min-width: 768px) and (max-width: 990px) {
+  .col-md-1 {
+    width: 8.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-md-2 {
+    width: 16.66667%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-md-3 {
+    width: 25.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-md-4 {
+    width: 33.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-md-5 {
+    width: 41.66666%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-md-6 {
+    width: 50.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-md-7 {
+    width: 58.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-md-8 {
+    width: 66.66666%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-md-9 {
+    width: 75.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-md-10 {
+    width: 83.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-md-11 {
+    width: 91.66666%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-md-12 {
+    width: 100.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  div.container * {
+    transition: all 300ms linear; }
+  /*
+    ---------------------------------- md menu ---------------------------
+    */
+  section.header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: #676380;
+    padding-top: 15px; }
+    section.header > div.row > div.col-xl-8 > div.logo {
+      display: flex;
+      flex-flow: wrap;
+      font-size: 28px;
+      margin-left: 10px;
+      color: #00e0d0; }
+      section.header > div.row > div.col-xl-8 > div.logo > img {
+        width: 50px;
+        height: 50px; }
+      section.header > div.row > div.col-xl-8 > div.logo > span {
+        display: flex;
+        margin: 0 10px;
+        align-items: center; }
+    section.header > div.row div.menu {
+      display: flex;
+      align-items: center; }
+      section.header > div.row div.menu > nav > ul {
+        display: flex;
+        flex-flow: row;
+        list-style: none;
+        margin-right: 10px; }
+        section.header > div.row div.menu > nav > ul > li {
+          margin: 0 10px; }
+          section.header > div.row div.menu > nav > ul > li > a {
+            font-size: 13px;
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 300ms linear; }
+            section.header > div.row div.menu > nav > ul > li > a:hover {
+              color: #00e0d0; }
+  /*
+    ----------------------------- end md menu ----------------------------
+     */
+  /*
+    ------------------------------ md slider -------------------------------
+     */
+  section.slider {
+    height: 600px;
+    background: url("../images/background1.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide {
+      height: 600px;
+      background-color: rgba(46, 39, 77, 0.7);
+      padding: 70px 0;
+      box-sizing: border-box; }
+      section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content {
+        display: flex;
+        flex-flow: column;
+        color: white; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > h1 {
+          font-family: "Copperplate Gothic Bold";
+          font-size: 32pt;
+          color: #ffffff; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > div.vl {
+          content: "";
+          width: 60px;
+          margin: 0 auto;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          background-color: #00e0d0;
+          height: 1px;
+          border: 0; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > p {
+          font-size: 12pt; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > a {
+          display: flex;
+          font-size: 12px;
+          font-family: "Serif";
+          align-self: center;
+          margin: 50px 0;
+          padding: 10px 15px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #00e0d0;
+          border: 1px solid #00e0d0;
+          transition: all 300ms linear; }
+          section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > a:hover {
+            color: white;
+            background-color: #00e0d0;
+            border: 1px solid white; }
+  /*
+    ------------------------------ end md slider ---------------------------
+     */
+  /*
+    ------------------------------ md about ------------------------------
+     */
+  section.about {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 70px 0; }
+    section.about > div.our-story {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column; }
+      section.about > div.our-story > div.logo {
+        display: flex;
+        justify-content: center; }
+      section.about > div.our-story > div.content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center; }
+        section.about > div.our-story > div.content > h2 {
+          font-family: Castellar;
+          font-size: 22pt;
+          text-transform: uppercase;
+          margin: 30px 0; }
+        section.about > div.our-story > div.content > p {
+          text-align: center;
+          font-size: 14px;
+          color: #817f86; }
+        section.about > div.our-story > div.content > a {
+          display: inline-block;
+          font-family: "Serif";
+          font-size: 14px;
+          margin-top: 30px;
+          padding: 10px 15px;
+          color: #00e0d0;
+          text-decoration: none;
+          text-transform: uppercase;
+          border: 1px solid #00e0d0;
+          transition: all 300ms linear;
+          cursor: pointer; }
+          section.about > div.our-story > div.content > a:hover {
+            color: white;
+            background-color: #00e0d0;
+            border: 1px solid white; }
+  /*
+    ------------------------------ end md about ---------------------------
+     */
+  /*
+    ------------------------------ md videos ------------------------------
+     */
+  section.videos {
+    background: url("../images/background-2.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.videos > div.row {
+      background-color: rgba(58, 50, 92, 0.8);
+      height: 400px;
+      align-items: center; }
+      section.videos > div.row > div.col-xl-8 {
+        justify-content: center; }
+        section.videos > div.row > div.col-xl-8 > div.content {
+          display: flex;
+          flex-flow: column;
+          text-align: center; }
+          section.videos > div.row > div.col-xl-8 > div.content > a {
+            font-size: 100px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: white;
+            transition: all 300ms linear; }
+            section.videos > div.row > div.col-xl-8 > div.content > a:hover {
+              color: #00e0d0; }
+          section.videos > div.row > div.col-xl-8 > div.content > span {
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold; }
+  /*
+    ------------------------------  end md videos ------------------------------
+    */
+  /*
+    ------------------------------ md expertise ---------------------------
+     */
+  section.expertise {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0; }
+    section.expertise > div.col-xl-8 {
+      flex-flow: column; }
+      section.expertise > div.col-xl-8 > div.header > h1 {
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase; }
+      section.expertise > div.col-xl-8 > div.header > h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 14px; }
+      section.expertise > div.col-xl-8 > div.header > div.vl {
+        content: "";
+        width: 60px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #c6c4c9;
+        height: 1px;
+        border: 0; }
+      section.expertise > div.col-xl-8 > div.exp-items {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center; }
+        section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 {
+          display: flex;
+          flex-flow: column;
+          width: 300px;
+          padding: 40px 30px;
+          text-align: center;
+          border: 1px solid #c6c4c9; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 > i {
+            color: #00e0d0;
+            font-size: 42px; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 > h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin: 30px 0; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 > p {
+            font-size: 14px;
+            color: #817f86; }
+  /*
+    ------------------------------ end md expertise-------------------------
+     */
+  /*
+    ------------------------------ md team ------------------------------
+    */
+  section.team {
+    background: url("../images/background1.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.team > div.row {
+      background-color: rgba(58, 50, 92, 0.8);
+      padding: 70px 0;
+      box-sizing: border-box; }
+      section.team > div.row > div.col-xl-8 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center; }
+        section.team > div.row > div.col-xl-8 > div.header {
+          text-align: center;
+          margin-bottom: 50px; }
+          section.team > div.row > div.col-xl-8 > div.header > h1 {
+            color: #ffffff; }
+          section.team > div.row > div.col-xl-8 > div.header > h3 {
+            color: #ffffff;
+            font-weight: lighter; }
+          section.team > div.row > div.col-xl-8 > div.header > div.vl {
+            content: "";
+            width: 50px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #655c80;
+            height: 2px;
+            border: 0; }
+        section.team > div.row > div.col-xl-8 > div.content {
+          display: flex;
+          flex-flow: row;
+          flex-wrap: wrap;
+          justify-content: center; }
+          section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 {
+            display: flex;
+            flex-flow: column;
+            width: 215px;
+            margin: 10px;
+            border: 1px solid white; }
+            section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.top > img {
+              width: 100%;
+              height: 230px;
+              background-color: white; }
+            section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.bottom {
+              width: 100%;
+              text-align: center;
+              color: #ffffff; }
+              section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.bottom > h5 {
+                font-size: 14px;
+                font-weight: bold;
+                margin-top: 20px; }
+              section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.bottom > h6 {
+                font-size: 12px;
+                color: #9f9cb1;
+                font-weight: lighter;
+                text-transform: uppercase;
+                margin-bottom: 20px; }
+        section.team > div.row > div.col-xl-8 > div.bottom {
+          text-align: center;
+          margin-top: 70px; }
+          section.team > div.row > div.col-xl-8 > div.bottom > h3 {
+            color: white;
+            font-size: 14px;
+            font-weight: 100;
+            margin-bottom: 25px; }
+          section.team > div.row > div.col-xl-8 > div.bottom > a {
+            font-family: Serif;
+            color: #00e0d0;
+            padding: 15px;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 1px solid #00e0d0;
+            transition: all 300ms linear; }
+            section.team > div.row > div.col-xl-8 > div.bottom > a:hover {
+              color: white;
+              border: 1px solid white;
+              background-color: #00e0d0; }
+  /*
+    ------------------------------ end md team --------------------------
+    */
+  /*
+    ------------------------------ md projects ------------------------------
+    */
+  section.projects {
+    display: flex;
+    flex-flow: column;
+    margin: 70px 0; }
+    section.projects > div.header {
+      justify-self: center;
+      justify-content: space-between;
+      margin: 0 auto;
+      margin-bottom: 70px; }
+      section.projects > div.header > h3 {
+        font-family: Castellar; }
+      section.projects > div.header > h4 {
+        font-size: 14px;
+        font-weight: 100;
+        text-transform: capitalize;
+        cursor: pointer;
+        transition: all 300ms linear; }
+        section.projects > div.header > h4:hover {
+          color: #00e0d0; }
+    section.projects > div.project-items {
+      display: flex;
+      flex-direction: row;
+      flex-flow: wrap; }
+      section.projects > div.project-items > div.col-xl-2 {
+        display: flex;
+        flex-flow: column;
+        flex: 33.333333%;
+        width: 100%;
+        text-align: center; }
+        section.projects > div.project-items > div.col-xl-2 > img {
+          width: 100%;
+          height: 200px;
+          background-color: #817f86; }
+    section.projects > div.button {
+      display: flex;
+      justify-content: center;
+      margin-top: 70px; }
+      section.projects > div.button > a {
+        font-family: Serif;
+        color: #00e0d0;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        border: 1px solid #00e0d0;
+        transition: all 300ms linear; }
+        section.projects > div.button > a:hover {
+          color: white;
+          background-color: #00e0d0; }
+  /*
+    ------------------------------ end md projects ------------------------------
+    */
+  /*
+    ------------------------------ md quotes ------------------------------
+    */
+  section.quotes {
+    height: 500px;
+    background: url("../images/background3.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide {
+      background-color: rgba(46, 39, 77, 0.7);
+      box-sizing: border-box; }
+      section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content {
+        display: flex;
+        flex-flow: column;
+        color: white; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > i {
+          font-size: 32px; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > p {
+          font-size: 14px;
+          margin: 50px 0; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > span.name {
+          font-size: 14px; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > span.position {
+          font-size: 12px;
+          font-weight: 100;
+          color: #cfced4; }
+  /*
+    ------------------------------ end md quotes ------------------------------
+    */
+  /*
+    ------------------------------ md reviews ------------------------------
+    */
+  section.review {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0; }
+    section.review > div.col-xl-8 {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-content: center; }
+      section.review > div.col-xl-8 div.forms > h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: Castellar; }
+      section.review > div.col-xl-8 div.forms > form {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center; }
+        section.review > div.col-xl-8 div.forms > form > input {
+          width: 460px;
+          padding: 15px 20px;
+          margin: 20px 0;
+          border: 1px solid #817f86;
+          color: #817f86;
+          font-size: 14px;
+          box-sizing: border-box; }
+        section.review > div.col-xl-8 div.forms > form > input#submit {
+          width: 140px;
+          padding: 10px 30px;
+          background-color: white;
+          color: #00e0d0;
+          border: 1px solid #00e0d0;
+          font-weight: bold;
+          transition: all 300ms linear; }
+          section.review > div.col-xl-8 div.forms > form > input#submit:hover {
+            color: white;
+            background-color: #00e0d0;
+            cursor: pointer; }
+        section.review > div.col-xl-8 div.forms > form > textarea {
+          width: 460px;
+          padding: 15px 20px;
+          margin: 20px 0;
+          border: 1px solid #817f86;
+          color: #817f86;
+          resize: none;
+          box-sizing: border-box; }
+      section.review > div.col-xl-8 > div.brands > h2 {
+        text-transform: uppercase;
+        font-family: Castellar;
+        text-align: center; }
+      section.review > div.col-xl-8 > div.brands > div.brand-items {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        margin-top: 20px; }
+        section.review > div.col-xl-8 > div.brands > div.brand-items > div.left-brands {
+          display: flex;
+          flex-flow: column;
+          margin-right: 40px; }
+          section.review > div.col-xl-8 > div.brands > div.brand-items > div.left-brands > img {
+            width: 160px;
+            height: 60px;
+            margin: 20px 0;
+            object-fit: contain; }
+        section.review > div.col-xl-8 > div.brands > div.brand-items > div.right-brands {
+          display: flex;
+          flex-flow: column;
+          margin-left: 40px; }
+          section.review > div.col-xl-8 > div.brands > div.brand-items > div.right-brands > img {
+            width: 160px;
+            height: 60px;
+            margin: 20px 0;
+            object-fit: contain; }
+  /*
+    ------------------------------ end md reviews ------------------------------
+    */
+  /*
+    ------------------------------ md footer ------------------------------
+    */
+  section.footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background: url("../images/background1.jpg") no-repeat;
+    object-fit: cover; }
+    section.footer > div.row {
+      background-color: rgba(65, 50, 102, 0.8);
+      padding: 70px 0; }
+      section.footer > div.row > footer.col-xl-8 {
+        display: flex;
+        flex-flow: column; }
+        section.footer > div.row > footer.col-xl-8 > div.about {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          margin-bottom: 40px; }
+          section.footer > div.row > footer.col-xl-8 > div.about > div.logo {
+            display: flex;
+            flex-flow: wrap;
+            font-size: 28px;
+            font-weight: lighter;
+            margin-bottom: 25px;
+            color: #00e0d0; }
+            section.footer > div.row > footer.col-xl-8 > div.about > div.logo > img {
+              width: 50px;
+              height: 50px; }
+            section.footer > div.row > footer.col-xl-8 > div.about > div.logo > span {
+              display: flex;
+              margin: 0 10px;
+              align-items: center; }
+          section.footer > div.row > footer.col-xl-8 > div.about > p {
+            font-size: 14px;
+            margin-bottom: 40px;
+            color: white;
+            text-align: center; }
+          section.footer > div.row > footer.col-xl-8 > div.about > ul {
+            list-style: none;
+            display: flex;
+            flex-flow: row wrap; }
+            section.footer > div.row > footer.col-xl-8 > div.about > ul > li {
+              text-transform: uppercase;
+              margin: 0 15px;
+              font-size: 14px;
+              color: white;
+              transition: all 300ms linear;
+              cursor: pointer; }
+              section.footer > div.row > footer.col-xl-8 > div.about > ul > li:hover {
+                color: #00e0d0; }
+        section.footer > div.row > footer.col-xl-8 > div.location {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          margin: 40px 0; }
+          section.footer > div.row > footer.col-xl-8 > div.location > h3 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 15px; }
+          section.footer > div.row > footer.col-xl-8 > div.location > p {
+            color: white;
+            font-size: 14px; }
+            section.footer > div.row > footer.col-xl-8 > div.location > p > i {
+              margin-right: 15px; }
+          section.footer > div.row > footer.col-xl-8 > div.location > span {
+            color: white; }
+            section.footer > div.row > footer.col-xl-8 > div.location > span > i {
+              margin-right: 15px; }
+        section.footer > div.row > footer.col-xl-8 > div.social {
+          display: flex;
+          flex-flow: column;
+          align-items: center; }
+          section.footer > div.row > footer.col-xl-8 > div.social > h3 {
+            color: white;
+            text-transform: uppercase; }
+          section.footer > div.row > footer.col-xl-8 > div.social > div.sub {
+            display: flex;
+            align-content: center;
+            margin-bottom: 40px; }
+            section.footer > div.row > footer.col-xl-8 > div.social > div.sub > input#subscribe {
+              text-align: center;
+              background-color: transparent;
+              font-size: 15px;
+              padding: 15px;
+              margin-right: 10px;
+              font-family: Serif;
+              box-shadow: none;
+              color: #a099b3;
+              border: 1px solid #a099b3; }
+            section.footer > div.row > footer.col-xl-8 > div.social > div.sub > input#sub-submit {
+              height: 50px;
+              width: 70px;
+              background-color: #a199b4;
+              border: none;
+              font-family: Castellar;
+              text-transform: capitalize;
+              transition: all 300ms linear; }
+              section.footer > div.row > footer.col-xl-8 > div.social > div.sub > input#sub-submit:hover {
+                background-color: white;
+                color: #655c80;
+                cursor: pointer; }
+          section.footer > div.row > footer.col-xl-8 > div.social > div.socials > i {
+            border: 1px solid white;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            transition: all 300ms linear; }
+            section.footer > div.row > footer.col-xl-8 > div.social > div.socials > i:hover {
+              background-color: white;
+              color: #00e0d0;
+              cursor: pointer; }
+          section.footer > div.row > footer.col-xl-8 > div.social > span {
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 14px; }
+  /*
+    ------------------------------ end md footer ------------------------------
+    */ }
+
+/*
+end media md
+ */
+/*
+media sm
+ */
+@media (min-width: 540px) and (max-width: 768px) {
+  .col-sm-1 {
+    width: 8.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-sm-2 {
+    width: 16.66667%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-sm-3 {
+    width: 25.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-sm-4 {
+    width: 33.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-sm-5 {
+    width: 41.66666%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-sm-6 {
+    width: 50.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-sm-7 {
+    width: 58.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-sm-8 {
+    width: 66.66666%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-sm-9 {
+    width: 75.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-sm-10 {
+    width: 83.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-sm-11 {
+    width: 91.66666%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-sm-12 {
+    width: 100.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  div.container * {
+    transition: all 300ms linear; }
+  /*
+    ---------------------------------- sm menu ---------------------------
+    */
+  section.header {
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    background-color: #676380;
+    padding-top: 15px; }
+    section.header > div.row > div.col-xl-8 {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center; }
+      section.header > div.row > div.col-xl-8 > div.logo {
+        display: flex;
+        flex-flow: wrap;
+        font-size: 28px;
+        color: #00e0d0; }
+        section.header > div.row > div.col-xl-8 > div.logo > img {
+          width: 50px;
+          height: 50px; }
+        section.header > div.row > div.col-xl-8 > div.logo > span {
+          display: flex;
+          margin: 0 10px;
+          align-items: center; }
+    section.header > div.row div.menu {
+      display: flex;
+      align-items: center; }
+      section.header > div.row div.menu > nav > ul {
+        display: flex;
+        flex-flow: row;
+        list-style: none; }
+        section.header > div.row div.menu > nav > ul > li {
+          margin: 0 10px; }
+          section.header > div.row div.menu > nav > ul > li > a {
+            font-size: 13px;
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 300ms linear; }
+            section.header > div.row div.menu > nav > ul > li > a:hover {
+              color: #00e0d0; }
+  /*
+    ----------------------------- end sm menu ----------------------------
+     */
+  /*
+    ------------------------------ sm slider -------------------------------
+     */
+  section.slider {
+    height: 600px;
+    background: url("../images/background1.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide {
+      height: 600px;
+      background-color: rgba(46, 39, 77, 0.7);
+      padding: 70px 0;
+      box-sizing: border-box; }
+      section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content {
+        display: flex;
+        flex-flow: column;
+        color: white; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > h1 {
+          font-family: "Copperplate Gothic Bold";
+          font-size: 26pt;
+          color: #ffffff; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > div.vl {
+          content: "";
+          width: 60px;
+          margin: 0 auto;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          background-color: #00e0d0;
+          height: 1px;
+          border: 0; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > p {
+          font-size: 12pt; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > a {
+          display: flex;
+          font-size: 12px;
+          font-family: "Serif";
+          align-self: center;
+          margin: 50px 0;
+          padding: 10px 15px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #00e0d0;
+          border: 1px solid #00e0d0;
+          transition: all 300ms linear; }
+          section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > a:hover {
+            color: white;
+            background-color: #00e0d0;
+            border: 1px solid white; }
+  /*
+    ------------------------------ end sm slider ---------------------------
+     */
+  /*
+    ------------------------------ sm about ------------------------------
+     */
+  section.about {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 70px 0; }
+    section.about > div.our-story {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column; }
+      section.about > div.our-story > div.logo {
+        display: flex;
+        justify-content: center; }
+      section.about > div.our-story > div.content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center; }
+        section.about > div.our-story > div.content > h2 {
+          font-family: Castellar;
+          font-size: 22pt;
+          text-transform: uppercase;
+          margin: 30px 0; }
+        section.about > div.our-story > div.content > p {
+          text-align: center;
+          font-size: 14px;
+          color: #817f86; }
+        section.about > div.our-story > div.content > a {
+          display: inline-block;
+          font-family: "Serif";
+          font-size: 14px;
+          margin-top: 30px;
+          padding: 10px 15px;
+          color: #00e0d0;
+          text-decoration: none;
+          text-transform: uppercase;
+          border: 1px solid #00e0d0;
+          transition: all 300ms linear;
+          cursor: pointer; }
+          section.about > div.our-story > div.content > a:hover {
+            color: white;
+            background-color: #00e0d0;
+            border: 1px solid white; }
+  /*
+    ------------------------------ end sm about ---------------------------
+     */
+  /*
+    ------------------------------ sm videos ------------------------------
+     */
+  section.videos {
+    background: url("../images/background-2.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.videos > div.row {
+      background-color: rgba(58, 50, 92, 0.8);
+      height: 400px;
+      align-items: center; }
+      section.videos > div.row > div.col-xl-8 {
+        justify-content: center; }
+        section.videos > div.row > div.col-xl-8 > div.content {
+          display: flex;
+          flex-flow: column;
+          text-align: center; }
+          section.videos > div.row > div.col-xl-8 > div.content > a {
+            font-size: 100px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: white;
+            transition: all 300ms linear; }
+            section.videos > div.row > div.col-xl-8 > div.content > a:hover {
+              color: #00e0d0; }
+          section.videos > div.row > div.col-xl-8 > div.content > span {
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold; }
+  /*
+    ------------------------------  end sm videos ------------------------------
+    */
+  /*
+    ------------------------------ sm expertise ---------------------------
+     */
+  section.expertise {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0; }
+    section.expertise > div.col-xl-8 {
+      flex-flow: column; }
+      section.expertise > div.col-xl-8 > div.header > h1 {
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase; }
+      section.expertise > div.col-xl-8 > div.header > h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 14px; }
+      section.expertise > div.col-xl-8 > div.header > div.vl {
+        content: "";
+        width: 60px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #c6c4c9;
+        height: 1px;
+        border: 0; }
+      section.expertise > div.col-xl-8 > div.exp-items {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center; }
+        section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 {
+          display: flex;
+          flex-flow: column;
+          width: 300px;
+          padding: 40px 30px;
+          text-align: center;
+          border: 1px solid #c6c4c9; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 > i {
+            color: #00e0d0;
+            font-size: 42px; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 > h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin: 30px 0; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 > p {
+            font-size: 14px;
+            color: #817f86; }
+  /*
+    ------------------------------ end sm expertise-------------------------
+     */
+  /*
+    ------------------------------ sm team ------------------------------
+    */
+  section.team {
+    background: url("../images/background1.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.team > div.row {
+      background-color: rgba(58, 50, 92, 0.8);
+      padding: 70px 0;
+      box-sizing: border-box; }
+      section.team > div.row > div.col-xl-8 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center; }
+        section.team > div.row > div.col-xl-8 > div.header {
+          text-align: center;
+          margin-bottom: 50px; }
+          section.team > div.row > div.col-xl-8 > div.header > h1 {
+            color: #ffffff; }
+          section.team > div.row > div.col-xl-8 > div.header > h3 {
+            color: #ffffff;
+            font-weight: lighter; }
+          section.team > div.row > div.col-xl-8 > div.header > div.vl {
+            content: "";
+            width: 50px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #655c80;
+            height: 2px;
+            border: 0; }
+        section.team > div.row > div.col-xl-8 > div.content {
+          display: flex;
+          flex-flow: row;
+          flex-wrap: wrap;
+          justify-content: center; }
+          section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 {
+            display: flex;
+            flex-flow: column;
+            width: 215px;
+            margin: 10px;
+            border: 1px solid white; }
+            section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.top > img {
+              width: 100%;
+              height: 230px;
+              background-color: white; }
+            section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.bottom {
+              width: 100%;
+              text-align: center;
+              color: #ffffff; }
+              section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.bottom > h5 {
+                font-size: 14px;
+                font-weight: bold;
+                margin-top: 20px; }
+              section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.bottom > h6 {
+                font-size: 12px;
+                color: #9f9cb1;
+                font-weight: lighter;
+                text-transform: uppercase;
+                margin-bottom: 20px; }
+        section.team > div.row > div.col-xl-8 > div.bottom {
+          text-align: center;
+          margin-top: 70px; }
+          section.team > div.row > div.col-xl-8 > div.bottom > h3 {
+            color: white;
+            font-size: 14px;
+            font-weight: 100;
+            margin-bottom: 25px; }
+          section.team > div.row > div.col-xl-8 > div.bottom > a {
+            font-family: Serif;
+            color: #00e0d0;
+            padding: 15px;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 1px solid #00e0d0;
+            transition: all 300ms linear; }
+            section.team > div.row > div.col-xl-8 > div.bottom > a:hover {
+              color: white;
+              border: 1px solid white;
+              background-color: #00e0d0; }
+  /*
+    ------------------------------ end sm team --------------------------
+    */
+  /*
+    ------------------------------ sm projects ------------------------------
+    */
+  section.projects {
+    display: flex;
+    flex-flow: column;
+    margin: 70px 0; }
+    section.projects > div.header {
+      flex-flow: column;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 70px; }
+      section.projects > div.header > h3 {
+        font-family: Castellar; }
+      section.projects > div.header > h4 {
+        font-size: 14px;
+        font-weight: 100;
+        text-transform: capitalize;
+        cursor: pointer;
+        transition: all 300ms linear; }
+        section.projects > div.header > h4:hover {
+          color: #00e0d0; }
+    section.projects > div.project-items {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-flow: wrap; }
+      section.projects > div.project-items > div.col-xl-2 {
+        display: flex;
+        flex-flow: column;
+        width: 300px;
+        text-align: center; }
+        section.projects > div.project-items > div.col-xl-2 > img {
+          width: 100%;
+          height: 200px;
+          background-color: #817f86; }
+    section.projects > div.button {
+      display: flex;
+      justify-content: center;
+      margin-top: 70px; }
+      section.projects > div.button > a {
+        font-family: Serif;
+        color: #00e0d0;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        border: 1px solid #00e0d0;
+        transition: all 300ms linear; }
+        section.projects > div.button > a:hover {
+          color: white;
+          background-color: #00e0d0; }
+  /*
+    ------------------------------ end sm projects ------------------------------
+    */
+  /*
+    ------------------------------ sm quotes ------------------------------
+    */
+  section.quotes {
+    height: 500px;
+    background: url("../images/background3.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide {
+      background-color: rgba(46, 39, 77, 0.7);
+      box-sizing: border-box; }
+      section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content {
+        display: flex;
+        flex-flow: column;
+        color: white; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > i {
+          font-size: 32px; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > p {
+          font-size: 14px;
+          margin: 50px 0; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > span.name {
+          font-size: 14px; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > span.position {
+          font-size: 12px;
+          font-weight: 100;
+          color: #cfced4; }
+  /*
+    ------------------------------ end sm quotes ------------------------------
+    */
+  /*
+    ------------------------------ sm reviews ------------------------------
+    */
+  section.review {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0; }
+    section.review > div.col-xl-8 {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-content: center; }
+      section.review > div.col-xl-8 div.forms > h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: Castellar; }
+      section.review > div.col-xl-8 div.forms > form {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center; }
+        section.review > div.col-xl-8 div.forms > form > input {
+          width: 460px;
+          padding: 15px 20px;
+          margin: 20px 0;
+          border: 1px solid #817f86;
+          color: #817f86;
+          font-size: 14px;
+          box-sizing: border-box; }
+        section.review > div.col-xl-8 div.forms > form > input#submit {
+          width: 140px;
+          padding: 10px 30px;
+          background-color: white;
+          color: #00e0d0;
+          border: 1px solid #00e0d0;
+          font-weight: bold;
+          transition: all 300ms linear; }
+          section.review > div.col-xl-8 div.forms > form > input#submit:hover {
+            color: white;
+            background-color: #00e0d0;
+            cursor: pointer; }
+        section.review > div.col-xl-8 div.forms > form > textarea {
+          width: 460px;
+          padding: 15px 20px;
+          margin: 20px 0;
+          border: 1px solid #817f86;
+          color: #817f86;
+          resize: none;
+          box-sizing: border-box; }
+      section.review > div.col-xl-8 > div.brands > h2 {
+        text-transform: uppercase;
+        font-family: Castellar;
+        text-align: center; }
+      section.review > div.col-xl-8 > div.brands > div.brand-items {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        margin-top: 20px; }
+        section.review > div.col-xl-8 > div.brands > div.brand-items > div.left-brands {
+          display: flex;
+          flex-flow: column;
+          margin-right: 40px; }
+          section.review > div.col-xl-8 > div.brands > div.brand-items > div.left-brands > img {
+            width: 160px;
+            height: 60px;
+            margin: 20px 0;
+            object-fit: contain; }
+        section.review > div.col-xl-8 > div.brands > div.brand-items > div.right-brands {
+          display: flex;
+          flex-flow: column;
+          margin-left: 40px; }
+          section.review > div.col-xl-8 > div.brands > div.brand-items > div.right-brands > img {
+            width: 160px;
+            height: 60px;
+            margin: 20px 0;
+            object-fit: contain; }
+  /*
+    ------------------------------ end sm reviews ------------------------------
+    */
+  /*
+    ------------------------------ sm footer ------------------------------
+    */
+  section.footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background: url("../images/background3.jpg") no-repeat;
+    object-fit: cover; }
+    section.footer > div.row {
+      background-color: rgba(65, 50, 102, 0.8);
+      padding: 70px 0; }
+      section.footer > div.row > footer.col-xl-8 {
+        display: flex;
+        flex-flow: column; }
+        section.footer > div.row > footer.col-xl-8 > div.about {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          margin-bottom: 40px; }
+          section.footer > div.row > footer.col-xl-8 > div.about > div.logo {
+            display: flex;
+            flex-flow: wrap;
+            font-size: 28px;
+            font-weight: lighter;
+            margin-bottom: 25px;
+            color: #00e0d0; }
+            section.footer > div.row > footer.col-xl-8 > div.about > div.logo > img {
+              width: 50px;
+              height: 50px; }
+            section.footer > div.row > footer.col-xl-8 > div.about > div.logo > span {
+              display: flex;
+              margin: 0 10px;
+              align-items: center; }
+          section.footer > div.row > footer.col-xl-8 > div.about > p {
+            font-size: 14px;
+            margin-bottom: 40px;
+            color: white;
+            text-align: center; }
+          section.footer > div.row > footer.col-xl-8 > div.about > ul {
+            list-style: none;
+            display: flex;
+            flex-flow: row wrap; }
+            section.footer > div.row > footer.col-xl-8 > div.about > ul > li {
+              text-transform: uppercase;
+              margin: 0 15px;
+              font-size: 14px;
+              color: white;
+              transition: all 300ms linear;
+              cursor: pointer; }
+              section.footer > div.row > footer.col-xl-8 > div.about > ul > li:hover {
+                color: #00e0d0; }
+        section.footer > div.row > footer.col-xl-8 > div.location {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          margin: 40px 0; }
+          section.footer > div.row > footer.col-xl-8 > div.location > h3 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 15px; }
+          section.footer > div.row > footer.col-xl-8 > div.location > p {
+            color: white;
+            font-size: 14px; }
+            section.footer > div.row > footer.col-xl-8 > div.location > p > i {
+              margin-right: 15px; }
+          section.footer > div.row > footer.col-xl-8 > div.location > span {
+            color: white; }
+            section.footer > div.row > footer.col-xl-8 > div.location > span > i {
+              margin-right: 15px; }
+        section.footer > div.row > footer.col-xl-8 > div.social {
+          display: flex;
+          flex-flow: column;
+          align-items: center; }
+          section.footer > div.row > footer.col-xl-8 > div.social > h3 {
+            color: white;
+            text-transform: uppercase; }
+          section.footer > div.row > footer.col-xl-8 > div.social > div.sub {
+            display: flex;
+            align-content: center;
+            margin-bottom: 40px; }
+            section.footer > div.row > footer.col-xl-8 > div.social > div.sub > input#subscribe {
+              text-align: center;
+              background-color: transparent;
+              font-size: 15px;
+              padding: 15px;
+              margin-right: 10px;
+              font-family: Serif;
+              box-shadow: none;
+              color: #a099b3;
+              border: 1px solid #a099b3; }
+            section.footer > div.row > footer.col-xl-8 > div.social > div.sub > input#sub-submit {
+              height: 50px;
+              width: 70px;
+              background-color: #a199b4;
+              border: none;
+              font-family: Castellar;
+              text-transform: capitalize;
+              transition: all 300ms linear; }
+              section.footer > div.row > footer.col-xl-8 > div.social > div.sub > input#sub-submit:hover {
+                background-color: white;
+                color: #655c80;
+                cursor: pointer; }
+          section.footer > div.row > footer.col-xl-8 > div.social > div.socials > i {
+            border: 1px solid white;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            transition: all 300ms linear; }
+            section.footer > div.row > footer.col-xl-8 > div.social > div.socials > i:hover {
+              background-color: white;
+              color: #00e0d0;
+              cursor: pointer; }
+          section.footer > div.row > footer.col-xl-8 > div.social > span {
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 14px; }
+  /*
+    ------------------------------ end sm footer ------------------------------
+    */ }
+
+/*
+end media sm
+ */
+/*
+media xs
+ */
+@media (max-width: 540px) {
+  .col-xs-1 {
+    width: 8.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xs-2 {
+    width: 16.66667%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xs-3 {
+    width: 25.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xs-4 {
+    width: 33.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xs-5 {
+    width: 41.66666%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xs-6 {
+    width: 50.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xs-7 {
+    width: 58.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xs-8 {
+    width: 66.66666%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xs-9 {
+    width: 75.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xs-10 {
+    width: 83.33333%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xs-11 {
+    width: 91.66666%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  .col-xs-12 {
+    width: 100.0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+  div.container * {
+    transition: all 300ms linear; }
+  /*
+    ---------------------------------- xs menu ---------------------------
+    */
+  section.header {
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    background-color: #676380;
+    padding-top: 15px; }
+    section.header > div.row > div.col-xl-8 {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center; }
+      section.header > div.row > div.col-xl-8 > div.logo {
+        display: flex;
+        flex-flow: wrap;
+        font-size: 28px;
+        color: #00e0d0; }
+        section.header > div.row > div.col-xl-8 > div.logo > img {
+          width: 50px;
+          height: 50px; }
+        section.header > div.row > div.col-xl-8 > div.logo > span {
+          display: flex;
+          margin: 0 10px;
+          align-items: center; }
+    section.header > div.row div.menu {
+      display: flex;
+      align-items: center; }
+      section.header > div.row div.menu > nav > ul {
+        display: flex;
+        flex-flow: row;
+        list-style: none; }
+        section.header > div.row div.menu > nav > ul > li {
+          margin: 0 10px; }
+          section.header > div.row div.menu > nav > ul > li > a {
+            font-size: 11px;
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 300ms linear; }
+            section.header > div.row div.menu > nav > ul > li > a:hover {
+              color: #00e0d0; }
+  /*
+    ----------------------------- end xs menu ----------------------------
+     */
+  /*
+    ------------------------------ xs slider -------------------------------
+     */
+  section.slider {
+    height: 600px;
+    background: url("../images/background1.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide {
+      height: 650px;
+      background-color: rgba(46, 39, 77, 0.7);
+      padding: 70px 0;
+      box-sizing: border-box; }
+      section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content {
+        display: flex;
+        flex-flow: column;
+        color: white;
+        padding: 30px 0; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > h1 {
+          font-family: "Copperplate Gothic Bold";
+          font-size: 26pt;
+          color: #ffffff; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > div.vl {
+          content: "";
+          width: 60px;
+          margin: 0 auto;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          background-color: #00e0d0;
+          height: 1px;
+          border: 0; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > p {
+          font-size: 12pt; }
+        section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > a {
+          display: flex;
+          font-size: 12px;
+          font-family: "Serif";
+          align-self: center;
+          margin: 50px 0;
+          padding: 10px 15px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #00e0d0;
+          border: 1px solid #00e0d0;
+          transition: all 300ms linear; }
+          section.slider > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > a:hover {
+            color: white;
+            background-color: #00e0d0;
+            border: 1px solid white; }
+  /*
+    ------------------------------ end xs slider ---------------------------
+     */
+  /*
+    ------------------------------ xs about ------------------------------
+     */
+  section.about {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 70px 0; }
+    section.about > div.our-story {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column; }
+      section.about > div.our-story > div.logo {
+        display: flex;
+        justify-content: center; }
+      section.about > div.our-story > div.content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center; }
+        section.about > div.our-story > div.content > h2 {
+          font-family: Castellar;
+          font-size: 22pt;
+          text-transform: uppercase;
+          margin: 30px 0; }
+        section.about > div.our-story > div.content > p {
+          text-align: center;
+          font-size: 14px;
+          color: #817f86; }
+        section.about > div.our-story > div.content > a {
+          display: inline-block;
+          font-family: "Serif";
+          font-size: 14px;
+          margin-top: 30px;
+          padding: 10px 15px;
+          color: #00e0d0;
+          text-decoration: none;
+          text-transform: uppercase;
+          border: 1px solid #00e0d0;
+          transition: all 300ms linear;
+          cursor: pointer; }
+          section.about > div.our-story > div.content > a:hover {
+            color: white;
+            background-color: #00e0d0;
+            border: 1px solid white; }
+  /*
+    ------------------------------ end xs about ---------------------------
+     */
+  /*
+    ------------------------------ xs videos ------------------------------
+     */
+  section.videos {
+    background: url("../images/background-2.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.videos > div.row {
+      background-color: rgba(58, 50, 92, 0.8);
+      height: 400px;
+      align-items: center; }
+      section.videos > div.row > div.col-xl-8 {
+        justify-content: center; }
+        section.videos > div.row > div.col-xl-8 > div.content {
+          display: flex;
+          flex-flow: column;
+          text-align: center; }
+          section.videos > div.row > div.col-xl-8 > div.content > a {
+            font-size: 100px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: white;
+            transition: all 300ms linear; }
+            section.videos > div.row > div.col-xl-8 > div.content > a:hover {
+              color: #00e0d0; }
+          section.videos > div.row > div.col-xl-8 > div.content > span {
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold; }
+  /*
+    ------------------------------  end xs videos ------------------------------
+    */
+  /*
+    ------------------------------ xs expertise ---------------------------
+     */
+  section.expertise {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0; }
+    section.expertise > div.col-xl-8 {
+      flex-flow: column; }
+      section.expertise > div.col-xl-8 > div.header > h1 {
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase; }
+      section.expertise > div.col-xl-8 > div.header > h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 14px; }
+      section.expertise > div.col-xl-8 > div.header > div.vl {
+        content: "";
+        width: 60px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #c6c4c9;
+        height: 1px;
+        border: 0; }
+      section.expertise > div.col-xl-8 > div.exp-items {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center; }
+        section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 {
+          display: flex;
+          flex-flow: column;
+          width: 300px;
+          padding: 40px 30px;
+          text-align: center;
+          border: 1px solid #c6c4c9; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 > i {
+            color: #00e0d0;
+            font-size: 42px; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 > h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin: 30px 0; }
+          section.expertise > div.col-xl-8 > div.exp-items > div.col-xl-2 > p {
+            font-size: 14px;
+            color: #817f86; }
+  /*
+    ------------------------------ end xs expertise-------------------------
+     */
+  /*
+    ------------------------------ xs team ------------------------------
+    */
+  section.team {
+    background: url("../images/background1.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.team > div.row {
+      background-color: rgba(58, 50, 92, 0.8);
+      padding: 70px 0;
+      box-sizing: border-box; }
+      section.team > div.row > div.col-xl-8 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center; }
+        section.team > div.row > div.col-xl-8 > div.header {
+          text-align: center;
+          margin-bottom: 50px; }
+          section.team > div.row > div.col-xl-8 > div.header > h1 {
+            color: #ffffff; }
+          section.team > div.row > div.col-xl-8 > div.header > h3 {
+            color: #ffffff;
+            font-weight: lighter; }
+          section.team > div.row > div.col-xl-8 > div.header > div.vl {
+            content: "";
+            width: 50px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #655c80;
+            height: 2px;
+            border: 0; }
+        section.team > div.row > div.col-xl-8 > div.content {
+          display: flex;
+          flex-flow: row;
+          flex-wrap: wrap;
+          justify-content: center; }
+          section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 {
+            display: flex;
+            flex-flow: column;
+            width: 215px;
+            margin: 10px;
+            border: 1px solid white; }
+            section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.top > img {
+              width: 100%;
+              height: 230px;
+              background-color: white; }
+            section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.bottom {
+              width: 100%;
+              text-align: center;
+              color: #ffffff; }
+              section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.bottom > h5 {
+                font-size: 14px;
+                font-weight: bold;
+                margin-top: 20px; }
+              section.team > div.row > div.col-xl-8 > div.content > div.col-xl-3 > div.bottom > h6 {
+                font-size: 12px;
+                color: #9f9cb1;
+                font-weight: lighter;
+                text-transform: uppercase;
+                margin-bottom: 20px; }
+        section.team > div.row > div.col-xl-8 > div.bottom {
+          text-align: center;
+          margin-top: 70px; }
+          section.team > div.row > div.col-xl-8 > div.bottom > h3 {
+            color: white;
+            font-size: 14px;
+            font-weight: 100;
+            margin-bottom: 25px; }
+          section.team > div.row > div.col-xl-8 > div.bottom > a {
+            font-family: Serif;
+            color: #00e0d0;
+            padding: 15px;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 1px solid #00e0d0;
+            transition: all 300ms linear; }
+            section.team > div.row > div.col-xl-8 > div.bottom > a:hover {
+              color: white;
+              border: 1px solid white;
+              background-color: #00e0d0; }
+  /*
+    ------------------------------ end xs team --------------------------
+    */
+  /*
+    ------------------------------ xs projects ------------------------------
+    */
+  section.projects {
+    display: flex;
+    flex-flow: column;
+    margin: 70px 0; }
+    section.projects > div.header {
+      flex-flow: column;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 70px; }
+      section.projects > div.header > h3 {
+        font-family: Castellar; }
+      section.projects > div.header > h4 {
+        font-size: 14px;
+        font-weight: 100;
+        text-transform: capitalize;
+        cursor: pointer;
+        transition: all 300ms linear; }
+        section.projects > div.header > h4:hover {
+          color: #00e0d0; }
+    section.projects > div.project-items {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-flow: wrap; }
+      section.projects > div.project-items > div.col-xl-2 {
+        display: flex;
+        flex-flow: column;
+        width: 300px;
+        text-align: center; }
+        section.projects > div.project-items > div.col-xl-2 > img {
+          width: 100%;
+          height: 200px;
+          background-color: #817f86; }
+    section.projects > div.button {
+      display: flex;
+      justify-content: center;
+      margin-top: 70px; }
+      section.projects > div.button > a {
+        font-family: Serif;
+        color: #00e0d0;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        border: 1px solid #00e0d0;
+        transition: all 300ms linear; }
+        section.projects > div.button > a:hover {
+          color: white;
+          background-color: #00e0d0; }
+  /*
+    ------------------------------ end xs projects ------------------------------
+    */
+  /*
+    ------------------------------ xs quotes ------------------------------
+    */
+  section.quotes {
+    height: 500px;
+    background: url("../images/background3.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; }
+    section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide {
+      background-color: rgba(46, 39, 77, 0.7);
+      box-sizing: border-box; }
+      section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content {
+        display: flex;
+        flex-flow: column;
+        color: white; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > i {
+          font-size: 32px; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > p {
+          font-size: 14px;
+          margin: 50px 0; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > span.name {
+          font-size: 14px; }
+        section.quotes > div.swiper > div.swiper-wrapper > div.swiper-slide > div.content > span.position {
+          font-size: 12px;
+          font-weight: 100;
+          color: #cfced4; }
+  /*
+    ------------------------------ end xs quotes ------------------------------
+    */
+  /*
+    ------------------------------ xs reviews ------------------------------
+    */
+  section.review {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0; }
+    section.review > div.col-xl-8 {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-content: center; }
+      section.review > div.col-xl-8 div.forms > h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: Castellar; }
+      section.review > div.col-xl-8 div.forms > form {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center; }
+        section.review > div.col-xl-8 div.forms > form > input {
+          width: 300px;
+          padding: 15px 20px;
+          margin: 20px 0;
+          border: 1px solid #817f86;
+          color: #817f86;
+          font-size: 14px;
+          box-sizing: border-box; }
+        section.review > div.col-xl-8 div.forms > form > input#submit {
+          width: 100px;
+          padding: 5px 15px;
+          background-color: white;
+          color: #00e0d0;
+          border: 1px solid #00e0d0;
+          font-weight: bold;
+          transition: all 300ms linear; }
+          section.review > div.col-xl-8 div.forms > form > input#submit:hover {
+            color: white;
+            background-color: #00e0d0;
+            cursor: pointer; }
+        section.review > div.col-xl-8 div.forms > form > textarea {
+          width: 300px;
+          padding: 15px 20px;
+          margin: 20px 0;
+          border: 1px solid #817f86;
+          color: #817f86;
+          resize: none;
+          box-sizing: border-box; }
+      section.review > div.col-xl-8 > div.brands > h2 {
+        text-transform: uppercase;
+        font-family: Castellar;
+        text-align: center; }
+      section.review > div.col-xl-8 > div.brands > div.brand-items {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        margin-top: 20px; }
+        section.review > div.col-xl-8 > div.brands > div.brand-items > div.left-brands {
+          display: flex;
+          flex-flow: column;
+          margin-right: 40px; }
+          section.review > div.col-xl-8 > div.brands > div.brand-items > div.left-brands > img {
+            width: 100px;
+            height: 40px;
+            margin: 20px 0;
+            object-fit: contain; }
+        section.review > div.col-xl-8 > div.brands > div.brand-items > div.right-brands {
+          display: flex;
+          flex-flow: column;
+          margin-left: 40px; }
+          section.review > div.col-xl-8 > div.brands > div.brand-items > div.right-brands > img {
+            width: 100px;
+            height: 40px;
+            margin: 20px 0;
+            object-fit: contain; }
+  /*
+    ------------------------------ end xs reviews ------------------------------
+    */
+  /*
+    ------------------------------ xs footer ------------------------------
+    */
+  section.footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background: url("../images/background1.jpg") no-repeat;
+    object-fit: cover; }
+    section.footer > div.row {
+      background-color: rgba(65, 50, 102, 0.8);
+      padding: 70px 0; }
+      section.footer > div.row > footer.col-xl-8 {
+        display: flex;
+        flex-flow: column; }
+        section.footer > div.row > footer.col-xl-8 > div.about {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          margin-bottom: 40px; }
+          section.footer > div.row > footer.col-xl-8 > div.about > div.logo {
+            display: flex;
+            flex-flow: wrap;
+            font-size: 28px;
+            font-weight: lighter;
+            margin-bottom: 25px;
+            color: #00e0d0; }
+            section.footer > div.row > footer.col-xl-8 > div.about > div.logo > img {
+              width: 50px;
+              height: 50px; }
+            section.footer > div.row > footer.col-xl-8 > div.about > div.logo > span {
+              display: flex;
+              margin: 0 10px;
+              align-items: center; }
+          section.footer > div.row > footer.col-xl-8 > div.about > p {
+            font-size: 14px;
+            margin-bottom: 40px;
+            color: white;
+            text-align: center; }
+          section.footer > div.row > footer.col-xl-8 > div.about > ul {
+            list-style: none;
+            display: flex;
+            flex-flow: row wrap; }
+            section.footer > div.row > footer.col-xl-8 > div.about > ul > li {
+              text-transform: uppercase;
+              margin: 0 15px;
+              font-size: 14px;
+              color: white;
+              transition: all 300ms linear;
+              cursor: pointer; }
+              section.footer > div.row > footer.col-xl-8 > div.about > ul > li:hover {
+                color: #00e0d0; }
+        section.footer > div.row > footer.col-xl-8 > div.location {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          margin: 40px 0; }
+          section.footer > div.row > footer.col-xl-8 > div.location > h3 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 15px; }
+          section.footer > div.row > footer.col-xl-8 > div.location > p {
+            color: white;
+            font-size: 14px; }
+            section.footer > div.row > footer.col-xl-8 > div.location > p > i {
+              margin-right: 15px; }
+          section.footer > div.row > footer.col-xl-8 > div.location > span {
+            color: white; }
+            section.footer > div.row > footer.col-xl-8 > div.location > span > i {
+              margin-right: 15px; }
+        section.footer > div.row > footer.col-xl-8 > div.social {
+          display: flex;
+          flex-flow: column;
+          align-items: center; }
+          section.footer > div.row > footer.col-xl-8 > div.social > h3 {
+            color: white;
+            text-transform: uppercase; }
+          section.footer > div.row > footer.col-xl-8 > div.social > div.sub {
+            display: flex;
+            align-content: center;
+            margin-bottom: 40px; }
+            section.footer > div.row > footer.col-xl-8 > div.social > div.sub > input#subscribe {
+              text-align: center;
+              background-color: transparent;
+              font-size: 15px;
+              padding: 15px;
+              margin-right: 10px;
+              font-family: Serif;
+              box-shadow: none;
+              color: #a099b3;
+              border: 1px solid #a099b3; }
+            section.footer > div.row > footer.col-xl-8 > div.social > div.sub > input#sub-submit {
+              height: 50px;
+              width: 70px;
+              background-color: #a199b4;
+              border: none;
+              font-family: Castellar;
+              text-transform: capitalize;
+              transition: all 300ms linear; }
+              section.footer > div.row > footer.col-xl-8 > div.social > div.sub > input#sub-submit:hover {
+                background-color: white;
+                color: #655c80;
+                cursor: pointer; }
+          section.footer > div.row > footer.col-xl-8 > div.social > div.socials > i {
+            border: 1px solid white;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            transition: all 300ms linear; }
+            section.footer > div.row > footer.col-xl-8 > div.social > div.socials > i:hover {
+              background-color: white;
+              color: #00e0d0;
+              cursor: pointer; }
+          section.footer > div.row > footer.col-xl-8 > div.social > span {
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 14px; }
+  /*
+    ------------------------------ end xs footer ------------------------------
+    */ }
+
+/*
+end media xs
+ */
+/*
+swiper
+ */
+.swiper {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+section.quotes > div.mySwiper2 > div.swiper-pagination > span.swiper-pagination-bullet {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 12px;
+  color: #000;
+  margin: 10px;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 300ms linear; }
+
+section.quotes > div.mySwiper2 > div.swiper-pagination > span.swiper-pagination-bullet-active {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  color: #fff;
+  background: #676380; }
+
+/*
+end swiper
+ */
